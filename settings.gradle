@@ -1,0 +1,6 @@
+include ':libraryAndroidQuickResponseCode'
+include ':libraryAppCompatCardview'
+include ':libraryBlasteringLibrary'
+include ':libraryCircularImageView'
+include ':libraryFacebookSDK'
+include ':hTCPromotorSMTools'

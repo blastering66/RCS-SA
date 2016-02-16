@@ -1,0 +1,11 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle" >
+ 
+    <corners android:radius="10dp" />
+ 
+    <gradient
+        
+        android:endColor="@color/primaryColor"
+        android:startColor="@color/primaryColor" />
+ 
+</shape><!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/hTCPromotorSMTools/src/main/res/drawable/bg_unselected_rounded.xml -->

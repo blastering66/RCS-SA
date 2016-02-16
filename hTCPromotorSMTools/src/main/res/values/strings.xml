@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hint_desc">Description</string>
+    <string name="hint_nama_toko">Shop Name</string>
+    <string name="hint_ket_masking">Masking / Description</string>
+    <string name="hint_wajib_diisi">Required</string>
+    <string name="hint_summary">Summary</string>
+    <string name="hint_total_stok">Total Stock</string>
+    <string name="hint_total_sales">Total Sales</string>
+    <string name="hint_harga_produk">Product Price</string>
+    <string name="hint_remarks">Remarks separate with koma (,)</string>
+    <string name="hint_imei">IMEI</string>
+    <string name="hint_brand">Brand</string>
+    <string name="hint_nama_program">Nama Program</string>
+    <string name="hint_issue">Issue</string>
+    <string name="hint_username">Username</string>
+    <string name="hint_password">Password</string>
+    
+    <string name="txt_scan">Scan Barcode</string>
+    <string name="txt_harga_produk">Product Price</string>
+    <string name="txt_desc_error_barcode">Please scan barcode again</string>
+    <string name="txt_desc_produk">Product Description</string>
+    <string name="txt_next">Next</string>
+    <string name="txt_nama">Name</string>
+    <string name="txt_jam">Time</string>
+    <string name="txt_date">Date</string>
+    <string name="txt_absen_Status">In/Out</string>
+    <string name="txt_nama_toko">Shop Name</string>
+    <string name="txt_nama_brand">Brand Name</string>
+    <string name="txt_time_date">Time and Date</string>
+    <string name="txt_pesan">Message</string>
+    <string name="txt_tgl_mulai">Date Start Program</string>
+    <string name="txt_tgl_selesai">Date Finish Program</string>
+    <string name="txt_tgl_sales">Date Sales</string>
+    <string name="txt_input_image">Input Image</string>
+    <string name="txt_submit">Submit</string>
+    <string name="txt_login_as">Login As</string>
+    <string name="txt_login">Login</string>
+    <string name="txt_absen">Absent</string>
+    <string name="txt_input_stock">Input Stock</string>
+    <string name="txt_cek_stock">Check Stock</string>
+    <string name="txt_input_sales">Input Sales</string>
+    <string name="txt_update_branding">Update Branding</string>
+    <string name="txt_issue">Issue</string>
+    <string name="txt_logout">Logout</string>
+    <string name="txt_presented_by">Presented by :</string>
+    <string name="txt_designed_by">Designed for :</string>
+    <string name="txt_get_loc">Get My Locations</string>
+    <string name="txt_attention">Make sure your location matched with the imaghe. If matched, choose OK. Otherwise, Retry.</string>
+    <string name="txt_retry">Retry</string>
+    <string name="txt_ok">Ok</string>
+    <string name="txt_ya">Yes</string>
+    <string name="txt_no">No</string>
+    <string name="txt_upload_camera">Upload From Camera</string>
+    <string name="txt_upload_gallery">Upload From Gallery</string>
+    <string name="txt_savedata">Save Data</string>
+    <string name="txt_edit_info">Edit Info</string>
+    <string name="txt_info_stock">Info Stock</string>
+    <string name="txt_alamat_toko">Shop Address</string>
+    <string name="txt_tlp_toko">Shop Address</string>
+    <string name="txt_area_toko">Shop Area</string>
+    <string name="txt_kota_toko">City</string>
+    <string name="txt_desc_toko">Description</string>
+    <string name="txt_pindah_toko">Switch Shop ?</string>
+    <string name="txt_tidak_ada_db">Product does not existed in database !</string>
+    <string name="txt_input_manual">Manually Input</string>
+    <string name="txt_penjualan_input_manual">Sales Manually Input</string>
+    <string name="txt_serial_number">Serial Number</string>
+    <string name="txt_imei">IMEI :</string>
+    <string name="txt_imei_1">IMEI 1</string>
+    <string name="txt_imei_2">IMEI 2</string>
+    <string name="txt_esn">ESN</string>
+    <string name="txt_esn_meid">ESN / MEID</string>
+    <string name="txt_dot">...</string>
+    <string name="txt_warna_produk">Product Color</string>
+    
+    <string name="txt_nama_produk">Product Name</string>
+    <string name="txt_transfer">Transfer Ke :</string>
+    <string name="txt_tambah_toko">Add Shop</string>
+    <string name="app_name">HTC-SA</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="absen_masuk">In</string>
+    <string name="absen_pulang">Out</string>
+    <string name="max_1">(*) 1 Image Max</string>
+    <string name="max_2">(*) 4 Image Max</string>
+
+    <string-array name="login_as">
+        <item>MDS</item>
+        <item>Promotor</item>
+    </string-array>
+    <string-array name="nama_produk">
+        <item>HTC Desire 616</item>
+        <item>HTC One M8 Ace_E8</item>
+        <item>HTC Desire 816</item>
+    </string-array>
+    <string-array name="warna_produk">
+        <item>Pearl White</item>
+        <item>Dark Gray</item>
+    </string-array>
+    <string-array name="ket_produk">
+        <item>HTC Desire Dual SIM 750 Unit</item>
+        <item>HTC Desire Dual SIM 1700 Unit</item>
+        <item>HTC Desire Dual SIM 1000 Unit</item>
+    </string-array>
+    <string-array name="country_arrays">
+        <item>Malaysia</item>
+        <item>United States</item>
+        <item>Indonesia</item>
+        <item>France</item>
+        <item>Italy</item>
+        <item>Singapore</item>
+        <item>New Zealand</item>
+        <item>India</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <com.bulletnoid.android.widget.StaggeredGridViewDemo.STGVImageView
+        android:id="@+id/img_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ddd"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/tv_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:layout_below="@id/img_content"
+        android:background="#fff"/>
+
+</RelativeLayout><!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/libraryBlasteringLibrary/src/main/res/layout/cell_stgv.xml --><!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/hTCPromotorSMTools/build/intermediates/exploded-aar/HTCPromotorSMTools/libraryBlasteringLibrary/unspecified/res/layout/cell_stgv.xml -->

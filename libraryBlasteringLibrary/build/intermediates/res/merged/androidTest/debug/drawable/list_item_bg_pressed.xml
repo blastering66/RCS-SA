@@ -1,0 +1,7 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+  <gradient
+      android:startColor="#C0C0C0"
+      android:endColor="#ffffff"
+      android:angle="90" />
+</shape><!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/libraryBlasteringLibrary/src/main/res/drawable/list_item_bg_pressed.xml --><!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/libraryBlasteringLibrary/build/intermediates/bundles/debug/res/drawable/list_item_bg_pressed.xml -->

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <color name="list_background">#19a6c1</color>    
+    <color name="counter_text_bg">#626262</color>    
+    <color name="list_item_title_pressed_color">#33B5E5</color>    
+    <color name="txt_color_roboto_white">#ffffff</color>
+    <color name="txt_color_roboto_blue">#19a6c1</color>
+    <color name="txt_color_roboto_green">#a6ce39</color>    
+    <color name="txt_color_roboto_gray_walk_dim">#736F6E</color>    
+    <color name="background_color_roboto_green">#a6ce39</color>
+    <color name="backgroud_layout_roboto">#ffffff</color>
+    <color name="backgroud_layout_roboto_blue">#19a6c1</color>    
+    <color name="selector_btn_pressed">#19a6c1</color>
+    <color name="selector_btn_default">#33B5E5</color>    
+    <color name="selector_btn_green_pressed">#669900</color>
+    <color name="selector_btn_green_default">#99CC00</color>
+    
+    <color name="dark_slate_gray">#2F4F4F</color>
+	<color name="gray_2">#AFAFAF</color>
+	<color name="gray_1">#C0C0C0</color>
+	<color name="black">#000000</color>
+	<color name="white">#ffffff</color>
+</resources>
+

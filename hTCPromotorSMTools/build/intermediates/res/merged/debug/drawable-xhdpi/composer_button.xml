@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/composer_button_pressed" android:state_pressed="true"/>
+    <item android:drawable="@drawable/composer_button_normal"/>
+
+</selector><!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/libraryBlasteringLibrary/src/main/res/drawable-xhdpi/composer_button.xml --><!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/hTCPromotorSMTools/build/intermediates/exploded-aar/HTCPromotorSMTools/libraryBlasteringLibrary/unspecified/res/drawable-xhdpi/composer_button.xml -->
