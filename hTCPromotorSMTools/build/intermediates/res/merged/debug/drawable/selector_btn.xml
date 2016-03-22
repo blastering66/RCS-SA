@@ -4,4 +4,4 @@
     <item android:drawable="@drawable/bg_btn_selected" android:state_focused="true"/>
     <item android:drawable="@drawable/bg_btn_normal"/>
 
-</selector><!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/hTCPromotorSMTools/src/main/res/drawable/selector_btn.xml -->
+</selector><!-- From: file:/D:/Workspace_Android_Github/RCS-SA/hTCPromotorSMTools/src/main/res/drawable/selector_btn.xml -->

@@ -43,12 +43,12 @@ public class Parameter_Collections {
 //	public static String URL= "http://128.199.163.18/htc/api/login.php?";	
 	
 	//New DEVEL LINK
-//	public static String URL_GAMBAR = "http://www.rcs-indonesia.com/htc/files/original/";
-//	public static String URL_GAMBAR_THUMB = "http://www.rcs-indonesia.com/htc/files/thumbnail/";
-//	public static String URL_LOGIN = "http://www.rcs-indonesia.com/htc/api/login.php?";
-//	public static String URL_GET = "http://www.rcs-indonesia.com/htc/api/get.php?";
-//	public static String URL_INSERT = "http://www.rcs-indonesia.com/htc/api/insert.php?";
-//	public static String URL_UPDATE = "http://www.rcs-indonesia.com/htc/api/update.php?";
+	public static String URL_GAMBAR = "http://www.rcs-indonesia.com/htc/files/original/";
+	public static String URL_GAMBAR_THUMB = "http://www.rcs-indonesia.com/htc/files/thumbnail/";
+	public static String URL_LOGIN = "http://www.rcs-indonesia.com/htc/api/login.php?";
+	public static String URL_GET = "http://www.rcs-indonesia.com/htc/api/get.php?";
+	public static String URL_INSERT = "http://www.rcs-indonesia.com/htc/api/insert.php?";
+	public static String URL_UPDATE = "http://www.rcs-indonesia.com/htc/api/update.php?";
 	
 //	public static String URL_GAMBAR = "http://128.199.163.18/htc/files/original/";	
 //	public static String URL_GAMBAR_THUMB = "http://128.199.163.18/htc/files/thumbnail/";
@@ -63,12 +63,12 @@ public class Parameter_Collections {
 //	public static String URL_INSERT = "http://192.168.1.225:80/htc/api/insert.php?";
 //	public static String URL_UPDATE = "http://192.168.1.225:80/htc/api/update.php?";	
 		
-	public static String URL_GAMBAR = "http://www.htc-sa.com/files/original/";
-	public static String URL_GAMBAR_THUMB = "http://www.htc-sa.com/files/thumbnail/";
-	public static String URL_LOGIN = "http://www.htc-sa.com/api/login.php?";
-	public static String URL_GET = "http://www.htc-sa.com/api/get.php?";
-	public static String URL_INSERT = "http://www.htc-sa.com/api/insert.php?";
-	public static String URL_UPDATE = "http://www.htc-sa.com/api/update.php?";
+//	public static String URL_GAMBAR = "http://www.htc-sa.com/files/original/";
+//	public static String URL_GAMBAR_THUMB = "http://www.htc-sa.com/files/thumbnail/";
+//	public static String URL_LOGIN = "http://www.htc-sa.com/api/login.php?";
+//	public static String URL_GET = "http://www.htc-sa.com/api/get.php?";
+//	public static String URL_INSERT = "http://www.htc-sa.com/api/insert.php?";
+//	public static String URL_UPDATE = "http://www.htc-sa.com/api/update.php?";
 	
 //	public static String URL_GAMBAR = "http://www.htc-sa.com/files/original/";
 //	public static String URL_LOGIN = "http://www.htc-sa.com/api/login.php?";

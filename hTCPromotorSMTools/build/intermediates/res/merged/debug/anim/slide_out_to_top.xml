@@ -19,4 +19,4 @@
     android:duration="@android:integer/config_longAnimTime"
     android:fromYDelta="0"
     android:toYDelta="-100%p" />
-<!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/libraryBlasteringLibrary/src/main/res/anim/slide_out_to_top.xml --><!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/hTCPromotorSMTools/build/intermediates/exploded-aar/HTCPromotorSMTools/libraryBlasteringLibrary/unspecified/res/anim/slide_out_to_top.xml -->
+<!-- From: file:/D:/Workspace_Android_Github/RCS-SA/libraryBlasteringLibrary/src/main/res/anim/slide_out_to_top.xml --><!-- From: file:/D:/Workspace_Android_Github/RCS-SA/hTCPromotorSMTools/build/intermediates/exploded-aar/RCS-SA/libraryBlasteringLibrary/unspecified/res/anim/slide_out_to_top.xml -->

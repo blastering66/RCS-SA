@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/hTCPromotorSMTools/build/intermediates/exploded-aar/HTCPromotorSMTools/libraryBlasteringLibrary/unspecified/res/values-v11/values-v11.xml -->
+    <!-- From: file:/D:/Workspace_Android_Github/RCS-SA/hTCPromotorSMTools/build/intermediates/exploded-aar/RCS-SA/libraryBlasteringLibrary/unspecified/res/values-v11/values-v11.xml -->
     <eat-comment/>
     <style name="AppBaseTheme" parent="android:Theme.Holo.Light">
         <!-- API 11 theme customizations can go here. -->
     </style>
-    <!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/hTCPromotorSMTools/src/main/res/values-v11/styles.xml -->
+    <!-- From: file:/D:/Workspace_Android_Github/RCS-SA/hTCPromotorSMTools/src/main/res/values-v11/styles.xml -->
     <eat-comment/>
     <style name="AppTheme" parent="AppBaseTheme">
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
@@ -15,7 +15,7 @@
         <item name="windowActionBar">false</item>
         <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
     </style>
-    <!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/hTCPromotorSMTools/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values-v11/values.xml -->
+    <!-- From: file:/D:/Workspace_Android_Github/RCS-SA/hTCPromotorSMTools/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values-v11/values.xml -->
     <eat-comment/>
     <style name="Base.TextAppearance.AppCompat.Inverse">
         <item name="android:textColor">?android:attr/textColorPrimaryInverse</item>
@@ -183,7 +183,7 @@
         <item name="android:dropDownSelector">?attr/listChoiceBackgroundIndicator</item>
         <item name="android:popupBackground">@drawable/abc_popup_background_mtrl_mult</item>
     </style>
-    <!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/hTCPromotorSMTools/src/main/res/values-v11/styles.xml -->
+    <!-- From: file:/D:/Workspace_Android_Github/RCS-SA/hTCPromotorSMTools/src/main/res/values-v11/styles.xml -->
     <eat-comment/>
     <style name="DialogTheme" parent="@android:style/Theme.Dialog">
         <item name="android:windowBackground">@android:color/transparent</item>
@@ -196,7 +196,7 @@
         <item name="spinBars">true</item>
         <item name="color">@android:color/white</item>
     </style>
-    <!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/hTCPromotorSMTools/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values-v11/values.xml -->
+    <!-- From: file:/D:/Workspace_Android_Github/RCS-SA/hTCPromotorSMTools/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values-v11/values.xml -->
     <eat-comment/>
     <style name="Platform.AppCompat" parent="android:Theme.Holo">
         <item name="android:windowNoTitle">true</item>
@@ -384,7 +384,7 @@
         <item name="android:listChoiceIndicatorSingle">@drawable/abc_btn_radio_material</item>
         <item name="android:listChoiceIndicatorMultiple">@drawable/abc_btn_check_material</item>
     </style>
-    <!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/hTCPromotorSMTools/src/main/res/values-v11/styles.xml -->
+    <!-- From: file:/D:/Workspace_Android_Github/RCS-SA/hTCPromotorSMTools/src/main/res/values-v11/styles.xml -->
     <eat-comment/>
     <style name="ToolBarStyle" parent="Theme.AppCompat.Light">
         <item name="android:textColorPrimary">@android:color/white</item>

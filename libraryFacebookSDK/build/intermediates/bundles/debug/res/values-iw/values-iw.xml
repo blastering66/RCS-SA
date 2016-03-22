@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/libraryFacebookSDK/src/main/res/values-iw/strings.xml -->
+    <!-- From: file:/D:/Workspace_Android_Github/RCS-SA/libraryFacebookSDK/src/main/res/values-iw/strings.xml -->
     <eat-comment/>
     <string name="com_facebook_choose_friends">בחר חברים</string>
     <string name="com_facebook_dialogloginactivity_ok_button">אישור</string>

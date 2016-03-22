@@ -124,6 +124,9 @@
          <activity
             android:name="id.tech.htctools.DialogFormInputProduk"
             android:theme="@style/MyActivityDialogTheme"></activity>
+        <activity
+            android:name="id.tech.htctools.DialogForm_InputProduk_Review"
+            android:theme="@style/MyActivityDialogTheme"></activity>
          <activity
             android:name="id.tech.htctools.DialogFormInputProdukImei"
             android:theme="@style/MyActivityDialogTheme"></activity>

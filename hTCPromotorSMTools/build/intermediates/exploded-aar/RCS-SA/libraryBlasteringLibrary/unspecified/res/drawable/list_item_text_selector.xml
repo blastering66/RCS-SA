@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+     <item android:state_pressed="true"
+           android:color="#ffffff" /> <!-- pressed -->
+     <item android:state_focused="true"
+           android:color="#000000" /> <!-- focused -->
+     <item android:color="#000000" /> <!-- default -->
+
+</selector><!-- From: file:/D:/Workspace_Android_Github/RCS-SA/libraryBlasteringLibrary/src/main/res/drawable/list_item_text_selector.xml -->

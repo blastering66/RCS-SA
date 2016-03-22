@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/RCS-SA.iml" filepath="$PROJECT_DIR$/RCS-SA.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hTCPromotorSMTools/hTCPromotorSMTools.iml" filepath="$PROJECT_DIR$/hTCPromotorSMTools/hTCPromotorSMTools.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libraryAndroidQuickResponseCode/libraryAndroidQuickResponseCode.iml" filepath="$PROJECT_DIR$/libraryAndroidQuickResponseCode/libraryAndroidQuickResponseCode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libraryAppCompatCardview/libraryAppCompatCardview.iml" filepath="$PROJECT_DIR$/libraryAppCompatCardview/libraryAppCompatCardview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libraryBlasteringLibrary/libraryBlasteringLibrary.iml" filepath="$PROJECT_DIR$/libraryBlasteringLibrary/libraryBlasteringLibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libraryCircularImageView/libraryCircularImageView.iml" filepath="$PROJECT_DIR$/libraryCircularImageView/libraryCircularImageView.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libraryFacebookSDK/libraryFacebookSDK.iml" filepath="$PROJECT_DIR$/libraryFacebookSDK/libraryFacebookSDK.iml" />
+    </modules>
+  </component>
+</project>

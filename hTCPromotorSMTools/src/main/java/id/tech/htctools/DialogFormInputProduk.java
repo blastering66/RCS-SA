@@ -10,6 +10,7 @@ import id.tech.htctools.R;
 import id.tech.util.Parameter_Collections;
 import id.tech.util.ServiceHandlerJSON;
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -43,6 +44,9 @@ public class DialogFormInputProduk extends FragmentActivity {
 	Spinner spinner_TipeProduk;
 	String cNamaProduk;
 	ArrayList<String> data_tipe;
+
+	View wrapper_Others;
+	AutoCompleteTextView ed_Others;
 
 	@Override
 	protected void onCreate(Bundle arg0) {
@@ -78,7 +82,12 @@ public class DialogFormInputProduk extends FragmentActivity {
 			cEsn = ed_Esn.getText().toString();
 
 			// cNamaProduk = auto_namaProduk.getText().toString();
-			nama_produk = spinner_TipeProduk.getSelectedItem().toString();
+			if(wrapper_Others.getVisibility() == View.VISIBLE){
+				nama_produk = ed_Others.getText().toString();
+			}else{
+				nama_produk = spinner_TipeProduk.getSelectedItem().toString();
+			}
+
 
 			cWarnaProduk = auto_warnaProduk.getText().toString();
 			cKeterangan = auto_keteranganProduk.getText().toString();
@@ -181,6 +190,8 @@ public class DialogFormInputProduk extends FragmentActivity {
 		// auto_namaProduk =
 		// (AutoCompleteTextView)findViewById(R.id.autocomplete_nama_produk);
 		spinner_TipeProduk = (Spinner) findViewById(R.id.autocomplete_nama_produk);
+		wrapper_Others= (View)findViewById(R.id.wrapper_others);
+		ed_Others = (AutoCompleteTextView)findViewById(R.id.ed_others);
 
 		auto_warnaProduk = (AutoCompleteTextView) findViewById(R.id.autocomplete_warna_produk);
 		auto_keteranganProduk = (AutoCompleteTextView) findViewById(R.id.autocomplete_ket_produk);
@@ -232,6 +243,7 @@ public class DialogFormInputProduk extends FragmentActivity {
 						Log.e("NAMA PRODUK",
 								c.getString(Parameter_Collections.TAG_NAMA_PRODUK));
 					}
+					data_tipe.add("Lainnya");
 				}
 
 			} catch (JSONException e) {
@@ -277,6 +289,10 @@ public class DialogFormInputProduk extends FragmentActivity {
 					// TODO Auto-generated method stub
 					cNamaProduk = data_tipe.get(position);
 					Log.e("Nama Tipe Produk", cNamaProduk);
+
+					if(cNamaProduk.equals("Lainnya")){
+						wrapper_Others.setVisibility(View.VISIBLE);
+					}
 				}
 
 				@Override
@@ -308,10 +324,39 @@ public class DialogFormInputProduk extends FragmentActivity {
 					// TODO Auto-generated method stub
 					if (!ed_Imei1.getText().toString().equals("")
 							&& !auto_warnaProduk.getText().toString()
-									.equals("")
+							.equals("")
 							&& !auto_keteranganProduk.getText().toString()
-									.equals("")) {
-						new Async_SubmitProduk().execute();
+							.equals("")) {
+
+
+						//Revisi bikin activity tuk Review
+						Intent intent =new Intent(getApplicationContext(), DialogForm_InputProduk_Review.class);
+						intent.putExtra("cSn", ed_Sn.getText().toString());
+						intent.putExtra("cImei1", ed_Imei1.getText().toString());
+						intent.putExtra("cImei2", ed_Imei2.getText().toString());
+						intent.putExtra("cEsn",  ed_Esn.getText().toString());
+						if(wrapper_Others.getVisibility() == View.VISIBLE){
+							intent.putExtra("nama_produk", ed_Others.getText().toString());
+						}else{
+							intent.putExtra("nama_produk", spinner_TipeProduk.getSelectedItem().toString());
+						}
+						intent.putExtra("cWarnaProduk", auto_warnaProduk.getText().toString());
+						intent.putExtra("cKeterangan", auto_keteranganProduk.getText().toString());
+						if(spf.getBoolean(Parameter_Collections.SH_PINDAH_TOKO, false)){
+							intent.putExtra("cKodeToko", spf.getString(Parameter_Collections.SH_KODE_TOKO_SEMENTARA, ""));
+						}else{
+							intent.putExtra("cKodeToko", spf.getString(Parameter_Collections.SH_KODE_TOKO, ""));
+						}
+						intent.putExtra("cIdPegawai",  spf.getString(Parameter_Collections.SH_ID_PEGAWAI, ""));
+						intent.putExtra("cLongitude",  spf.getString(Parameter_Collections.TAG_LONGITUDE_NOW,
+								"0.0"));
+						intent.putExtra("cLatitude",  spf.getString(Parameter_Collections.TAG_LATITUDE_NOW,
+								"0.0"));
+						startActivity(intent);
+						finish();
+
+//						new Async_SubmitProduk().execute();
+
 					} else {
 						Toast.makeText(getApplicationContext(),
 								"Please fill required field",

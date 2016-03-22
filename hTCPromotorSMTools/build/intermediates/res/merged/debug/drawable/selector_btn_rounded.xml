@@ -4,4 +4,4 @@
     <item android:drawable="@drawable/bg_selected_rounded" android:state_focused="true"/>
     <item android:drawable="@drawable/bg_unselected_rounded"/>
 
-</selector><!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/hTCPromotorSMTools/src/main/res/drawable/selector_btn_rounded.xml -->
+</selector><!-- From: file:/D:/Workspace_Android_Github/RCS-SA/hTCPromotorSMTools/src/main/res/drawable/selector_btn_rounded.xml -->

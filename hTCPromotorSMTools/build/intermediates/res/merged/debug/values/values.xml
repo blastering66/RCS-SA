@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/hTCPromotorSMTools/src/main/res/values/strings.xml -->
+    <!-- From: file:/D:/Workspace_Android_Github/RCS-SA/hTCPromotorSMTools/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string-array name="country_arrays">
         <item>Malaysia</item>
@@ -30,32 +30,32 @@
         <item>Pearl White</item>
         <item>Dark Gray</item>
     </string-array>
-    <!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/hTCPromotorSMTools/build/intermediates/exploded-aar/HTCPromotorSMTools/libraryBlasteringLibrary/unspecified/res/values/values.xml -->
+    <!-- From: file:/D:/Workspace_Android_Github/RCS-SA/hTCPromotorSMTools/build/intermediates/exploded-aar/RCS-SA/libraryBlasteringLibrary/unspecified/res/values/values.xml -->
     <eat-comment/>
     <attr format="boolean" name="centered"/>
     <attr format="dimension|reference" name="childSize"/>
-    <!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/hTCPromotorSMTools/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
+    <!-- From: file:/D:/Workspace_Android_Github/RCS-SA/hTCPromotorSMTools/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
     <eat-comment/>
     <attr format="reference" name="drawerArrowStyle"/>
-    <!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/hTCPromotorSMTools/build/intermediates/exploded-aar/HTCPromotorSMTools/libraryBlasteringLibrary/unspecified/res/values/values.xml -->
+    <!-- From: file:/D:/Workspace_Android_Github/RCS-SA/hTCPromotorSMTools/build/intermediates/exploded-aar/RCS-SA/libraryBlasteringLibrary/unspecified/res/values/values.xml -->
     <eat-comment/>
     <attr format="float|reference" name="fromDegrees"/>
-    <!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/hTCPromotorSMTools/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
+    <!-- From: file:/D:/Workspace_Android_Github/RCS-SA/hTCPromotorSMTools/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
     <eat-comment/>
     <attr format="dimension" name="height"/>
     <attr format="boolean" name="isLightTheme"/>
-    <!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/hTCPromotorSMTools/build/intermediates/exploded-aar/HTCPromotorSMTools/libraryBlasteringLibrary/unspecified/res/values/values.xml -->
+    <!-- From: file:/D:/Workspace_Android_Github/RCS-SA/hTCPromotorSMTools/build/intermediates/exploded-aar/RCS-SA/libraryBlasteringLibrary/unspecified/res/values/values.xml -->
     <eat-comment/>
     <attr format="color" name="selectedColor"/>
     <attr format="dimension" name="strokeWidth"/>
-    <!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/hTCPromotorSMTools/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
+    <!-- From: file:/D:/Workspace_Android_Github/RCS-SA/hTCPromotorSMTools/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
     <eat-comment/>
     <attr format="string" name="title"/>
-    <!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/hTCPromotorSMTools/build/intermediates/exploded-aar/HTCPromotorSMTools/libraryBlasteringLibrary/unspecified/res/values/values.xml -->
+    <!-- From: file:/D:/Workspace_Android_Github/RCS-SA/hTCPromotorSMTools/build/intermediates/exploded-aar/RCS-SA/libraryBlasteringLibrary/unspecified/res/values/values.xml -->
     <eat-comment/>
     <attr format="float|reference" name="toDegrees"/>
     <attr format="color" name="unselectedColor"/>
-    <!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/hTCPromotorSMTools/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
+    <!-- From: file:/D:/Workspace_Android_Github/RCS-SA/hTCPromotorSMTools/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
     <eat-comment/>
     <bool name="abc_action_bar_embed_tabs">true</bool>
     <bool name="abc_action_bar_embed_tabs_pre_jb">false</bool>
@@ -63,14 +63,14 @@
     <bool name="abc_config_actionMenuItemAllCaps">true</bool>
     <bool name="abc_config_allowActionMenuItemTextWithIcon">false</bool>
     <bool name="abc_config_showMenuShortcutsWhenKeyboardPresent">false</bool>
-    <!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/hTCPromotorSMTools/build/intermediates/exploded-aar/HTCPromotorSMTools/libraryBlasteringLibrary/unspecified/res/values/values.xml -->
+    <!-- From: file:/D:/Workspace_Android_Github/RCS-SA/hTCPromotorSMTools/build/intermediates/exploded-aar/RCS-SA/libraryBlasteringLibrary/unspecified/res/values/values.xml -->
     <eat-comment/>
     <bool name="default_circle_indicator_centered">true</bool>
     <bool name="default_circle_indicator_snap">false</bool>
     <bool name="default_line_indicator_centered">true</bool>
     <bool name="default_title_indicator_selected_bold">true</bool>
     <bool name="default_underline_indicator_fades">true</bool>
-    <!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/hTCPromotorSMTools/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
+    <!-- From: file:/D:/Workspace_Android_Github/RCS-SA/hTCPromotorSMTools/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
     <eat-comment/>
     <color name="abc_input_method_navigation_guard">@android:color/black</color>
     <color name="abc_search_url_text_normal">#7fa87f</color>
@@ -78,35 +78,35 @@
     <color name="abc_search_url_text_selected">@android:color/black</color>
     <color name="accent_material_dark">@color/material_deep_teal_200</color>
     <color name="accent_material_light">@color/material_deep_teal_500</color>
-    <!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/hTCPromotorSMTools/src/main/res/values/color.xml -->
+    <!-- From: file:/D:/Workspace_Android_Github/RCS-SA/hTCPromotorSMTools/src/main/res/values/color.xml -->
     <eat-comment/>
     <color name="ash_grey">#666362</color>
-    <!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/hTCPromotorSMTools/build/intermediates/exploded-aar/HTCPromotorSMTools/libraryBlasteringLibrary/unspecified/res/values/values.xml -->
+    <!-- From: file:/D:/Workspace_Android_Github/RCS-SA/hTCPromotorSMTools/build/intermediates/exploded-aar/RCS-SA/libraryBlasteringLibrary/unspecified/res/values/values.xml -->
     <eat-comment/>
     <color name="backgroud_layout_roboto">#ffffff</color>
     <color name="backgroud_layout_roboto_blue">#19a6c1</color>
     <color name="background_color_roboto_green">#a6ce39</color>
-    <!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/hTCPromotorSMTools/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
+    <!-- From: file:/D:/Workspace_Android_Github/RCS-SA/hTCPromotorSMTools/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
     <eat-comment/>
     <color name="background_floating_material_dark">#ff424242</color>
     <color name="background_floating_material_light">#ffeeeeee</color>
     <color name="background_material_dark">#ff303030</color>
     <color name="background_material_light">#ffeeeeee</color>
-    <!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/hTCPromotorSMTools/src/main/res/values/color.xml -->
+    <!-- From: file:/D:/Workspace_Android_Github/RCS-SA/hTCPromotorSMTools/src/main/res/values/color.xml -->
     <eat-comment/>
     <color name="bg_black">#000000</color>
     <color name="bg_black_transparan">#70000000</color>
     <color name="bg_listview">#D1D0CE</color>
     <color name="bg_white">#ffffff</color>
     <color name="bg_white_selected">#C0C0C0</color>
-    <!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/hTCPromotorSMTools/build/intermediates/exploded-aar/HTCPromotorSMTools/libraryBlasteringLibrary/unspecified/res/values/values.xml -->
+    <!-- From: file:/D:/Workspace_Android_Github/RCS-SA/hTCPromotorSMTools/build/intermediates/exploded-aar/RCS-SA/libraryBlasteringLibrary/unspecified/res/values/values.xml -->
     <eat-comment/>
     <color name="black">#000000</color>
-    <!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/hTCPromotorSMTools/src/main/res/values/color.xml -->
+    <!-- From: file:/D:/Workspace_Android_Github/RCS-SA/hTCPromotorSMTools/src/main/res/values/color.xml -->
     <eat-comment/>
     <color name="black_cat">#413839</color>
     <color name="blue_ics">#33b5e5</color>
-    <!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/hTCPromotorSMTools/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
+    <!-- From: file:/D:/Workspace_Android_Github/RCS-SA/hTCPromotorSMTools/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
     <eat-comment/>
     <color name="bright_foreground_disabled_material_dark">#80ffffff</color>
     <color name="bright_foreground_disabled_material_light">#80000000</color>
@@ -116,13 +116,13 @@
     <color name="bright_foreground_material_light">@android:color/black</color>
     <color name="button_material_dark">#ff5a595b</color>
     <color name="button_material_light">#ffd6d7d7</color>
-    <!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/hTCPromotorSMTools/build/intermediates/exploded-aar/com.android.support/cardview-v7/23.1.1/res/values/values.xml -->
+    <!-- From: file:/D:/Workspace_Android_Github/RCS-SA/hTCPromotorSMTools/build/intermediates/exploded-aar/com.android.support/cardview-v7/23.1.1/res/values/values.xml -->
     <eat-comment/>
     <color name="cardview_dark_background">#FF202020</color>
     <color name="cardview_light_background">#FFFAFAFA</color>
     <color name="cardview_shadow_end_color">#03000000</color>
     <color name="cardview_shadow_start_color">#37000000</color>
-    <!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/hTCPromotorSMTools/src/main/res/values/color.xml -->
+    <!-- From: file:/D:/Workspace_Android_Github/RCS-SA/hTCPromotorSMTools/src/main/res/values/color.xml -->
     <eat-comment/>
     <color name="color_bg">#EBF4FA</color>
     <color name="color_green">#990000</color>
@@ -134,10 +134,10 @@
     <color name="color_wp_darkgreen">#0f9d58</color>
     <color name="color_wp_darkorange">#ff6600</color>
     <color name="color_wp_darkpurple">#800080</color>
-    <!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/hTCPromotorSMTools/build/intermediates/exploded-aar/HTCPromotorSMTools/libraryAndroidQuickResponseCode/unspecified/res/values/values.xml -->
+    <!-- From: file:/D:/Workspace_Android_Github/RCS-SA/hTCPromotorSMTools/build/intermediates/exploded-aar/RCS-SA/libraryAndroidQuickResponseCode/unspecified/res/values/values.xml -->
     <eat-comment/>
     <color name="contents_text">#ff000000</color>
-    <!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/hTCPromotorSMTools/build/intermediates/exploded-aar/HTCPromotorSMTools/libraryBlasteringLibrary/unspecified/res/values/values.xml -->
+    <!-- From: file:/D:/Workspace_Android_Github/RCS-SA/hTCPromotorSMTools/build/intermediates/exploded-aar/RCS-SA/libraryBlasteringLibrary/unspecified/res/values/values.xml -->
     <eat-comment/>
     <color name="counter_text_bg">#626262</color>
     <color name="dark_slate_gray">#2F4F4F</color>
@@ -150,25 +150,25 @@
     <color name="default_title_indicator_selected_color">#FFFFFFFF</color>
     <color name="default_title_indicator_text_color">#BBFFFFFF</color>
     <color name="default_underline_indicator_selected_color">#FF33B5E5</color>
-    <!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/hTCPromotorSMTools/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
+    <!-- From: file:/D:/Workspace_Android_Github/RCS-SA/hTCPromotorSMTools/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
     <eat-comment/>
     <color name="dim_foreground_disabled_material_dark">#80bebebe</color>
     <color name="dim_foreground_disabled_material_light">#80323232</color>
     <color name="dim_foreground_material_dark">#ffbebebe</color>
     <color name="dim_foreground_material_light">#ff323232</color>
-    <!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/hTCPromotorSMTools/src/main/res/values/color.xml -->
+    <!-- From: file:/D:/Workspace_Android_Github/RCS-SA/hTCPromotorSMTools/src/main/res/values/color.xml -->
     <eat-comment/>
     <color name="divider">#50000000</color>
     <color name="edittext_bg">#ffffff</color>
     <color name="edittext_text">#000000</color>
-    <!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/hTCPromotorSMTools/build/intermediates/exploded-aar/HTCPromotorSMTools/libraryAndroidQuickResponseCode/unspecified/res/values/values.xml -->
+    <!-- From: file:/D:/Workspace_Android_Github/RCS-SA/hTCPromotorSMTools/build/intermediates/exploded-aar/RCS-SA/libraryAndroidQuickResponseCode/unspecified/res/values/values.xml -->
     <eat-comment/>
     <color name="encode_view">#ffffffff</color>
-    <!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/hTCPromotorSMTools/build/intermediates/exploded-aar/HTCPromotorSMTools/libraryBlasteringLibrary/unspecified/res/values/values.xml -->
+    <!-- From: file:/D:/Workspace_Android_Github/RCS-SA/hTCPromotorSMTools/build/intermediates/exploded-aar/RCS-SA/libraryBlasteringLibrary/unspecified/res/values/values.xml -->
     <eat-comment/>
     <color name="gray_1">#C0C0C0</color>
     <color name="gray_2">#AFAFAF</color>
-    <!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/hTCPromotorSMTools/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
+    <!-- From: file:/D:/Workspace_Android_Github/RCS-SA/hTCPromotorSMTools/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
     <eat-comment/>
     <color name="highlighted_text_material_dark">#6680cbc4</color>
     <color name="highlighted_text_material_light">#66009688</color>
@@ -176,25 +176,25 @@
     <color name="hint_foreground_material_light">@color/bright_foreground_disabled_material_light</color>
     <color name="link_text_material_dark">@color/material_deep_teal_200</color>
     <color name="link_text_material_light">@color/material_deep_teal_500</color>
-    <!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/hTCPromotorSMTools/build/intermediates/exploded-aar/HTCPromotorSMTools/libraryBlasteringLibrary/unspecified/res/values/values.xml -->
+    <!-- From: file:/D:/Workspace_Android_Github/RCS-SA/hTCPromotorSMTools/build/intermediates/exploded-aar/RCS-SA/libraryBlasteringLibrary/unspecified/res/values/values.xml -->
     <eat-comment/>
     <color name="list_background">#19a6c1</color>
     <color name="list_item_title_pressed_color">#33B5E5</color>
-    <!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/hTCPromotorSMTools/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
+    <!-- From: file:/D:/Workspace_Android_Github/RCS-SA/hTCPromotorSMTools/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
     <eat-comment/>
     <color name="material_blue_grey_800">#ff37474f</color>
     <color name="material_blue_grey_900">#ff263238</color>
     <color name="material_blue_grey_950">#ff21272b</color>
     <color name="material_deep_teal_200">#ff80cbc4</color>
     <color name="material_deep_teal_500">#ff009688</color>
-    <!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/hTCPromotorSMTools/build/intermediates/exploded-aar/HTCPromotorSMTools/libraryAndroidQuickResponseCode/unspecified/res/values/values.xml -->
+    <!-- From: file:/D:/Workspace_Android_Github/RCS-SA/hTCPromotorSMTools/build/intermediates/exploded-aar/RCS-SA/libraryAndroidQuickResponseCode/unspecified/res/values/values.xml -->
     <eat-comment/>
     <color name="possible_result_points">#c07FFF00</color>
-    <!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/hTCPromotorSMTools/src/main/res/values/color.xml -->
+    <!-- From: file:/D:/Workspace_Android_Github/RCS-SA/hTCPromotorSMTools/src/main/res/values/color.xml -->
     <eat-comment/>
     <color name="primaryColor">#388E3C</color>
     <color name="primaryColorDark">#4CAF50</color>
-    <!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/hTCPromotorSMTools/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
+    <!-- From: file:/D:/Workspace_Android_Github/RCS-SA/hTCPromotorSMTools/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
     <eat-comment/>
     <color name="primary_dark_material_dark">#ff000000</color>
     <color name="primary_dark_material_light">#ff757575</color>
@@ -204,14 +204,14 @@
     <color name="primary_text_default_material_light">#de000000</color>
     <color name="primary_text_disabled_material_dark">#4Dffffff</color>
     <color name="primary_text_disabled_material_light">#39000000</color>
-    <!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/hTCPromotorSMTools/build/intermediates/exploded-aar/HTCPromotorSMTools/libraryAndroidQuickResponseCode/unspecified/res/values/values.xml -->
+    <!-- From: file:/D:/Workspace_Android_Github/RCS-SA/hTCPromotorSMTools/build/intermediates/exploded-aar/RCS-SA/libraryAndroidQuickResponseCode/unspecified/res/values/values.xml -->
     <eat-comment/>
     <color name="result_image_border">#ff526F35</color>
     <color name="result_minor_text">#ffc0c0c0</color>
     <color name="result_points">#c07FFF00</color>
     <color name="result_text">#ffffffff</color>
     <color name="result_view">#b0000000</color>
-    <!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/hTCPromotorSMTools/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
+    <!-- From: file:/D:/Workspace_Android_Github/RCS-SA/hTCPromotorSMTools/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
     <eat-comment/>
     <color name="ripple_material_dark">#40ffffff</color>
     <color name="ripple_material_light">#40000000</color>
@@ -219,35 +219,35 @@
     <color name="secondary_text_default_material_light">#8a000000</color>
     <color name="secondary_text_disabled_material_dark">#36ffffff</color>
     <color name="secondary_text_disabled_material_light">#24000000</color>
-    <!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/hTCPromotorSMTools/build/intermediates/exploded-aar/HTCPromotorSMTools/libraryBlasteringLibrary/unspecified/res/values/values.xml -->
+    <!-- From: file:/D:/Workspace_Android_Github/RCS-SA/hTCPromotorSMTools/build/intermediates/exploded-aar/RCS-SA/libraryBlasteringLibrary/unspecified/res/values/values.xml -->
     <eat-comment/>
     <color name="selector_btn_default">#33B5E5</color>
     <color name="selector_btn_green_default">#99CC00</color>
     <color name="selector_btn_green_pressed">#669900</color>
     <color name="selector_btn_pressed">#19a6c1</color>
-    <!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/hTCPromotorSMTools/build/intermediates/exploded-aar/HTCPromotorSMTools/libraryAndroidQuickResponseCode/unspecified/res/values/values.xml -->
+    <!-- From: file:/D:/Workspace_Android_Github/RCS-SA/hTCPromotorSMTools/build/intermediates/exploded-aar/RCS-SA/libraryAndroidQuickResponseCode/unspecified/res/values/values.xml -->
     <eat-comment/>
     <color name="status_text">#ffffffff</color>
     <color name="status_view">#50000000</color>
-    <!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/hTCPromotorSMTools/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
+    <!-- From: file:/D:/Workspace_Android_Github/RCS-SA/hTCPromotorSMTools/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
     <eat-comment/>
     <color name="switch_thumb_normal_material_dark">#ffbdbdbd</color>
     <color name="switch_thumb_normal_material_light">#fff1f1f1</color>
-    <!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/hTCPromotorSMTools/src/main/res/values/color.xml -->
+    <!-- From: file:/D:/Workspace_Android_Github/RCS-SA/hTCPromotorSMTools/src/main/res/values/color.xml -->
     <eat-comment/>
     <color name="transparent">#80ffffff</color>
-    <!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/hTCPromotorSMTools/build/intermediates/exploded-aar/HTCPromotorSMTools/libraryBlasteringLibrary/unspecified/res/values/values.xml -->
+    <!-- From: file:/D:/Workspace_Android_Github/RCS-SA/hTCPromotorSMTools/build/intermediates/exploded-aar/RCS-SA/libraryBlasteringLibrary/unspecified/res/values/values.xml -->
     <eat-comment/>
     <color name="txt_color_roboto_blue">#19a6c1</color>
     <color name="txt_color_roboto_gray_walk_dim">#736F6E</color>
     <color name="txt_color_roboto_green">#a6ce39</color>
     <color name="txt_color_roboto_white">#ffffff</color>
-    <!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/hTCPromotorSMTools/build/intermediates/exploded-aar/HTCPromotorSMTools/libraryAndroidQuickResponseCode/unspecified/res/values/values.xml -->
+    <!-- From: file:/D:/Workspace_Android_Github/RCS-SA/hTCPromotorSMTools/build/intermediates/exploded-aar/RCS-SA/libraryAndroidQuickResponseCode/unspecified/res/values/values.xml -->
     <eat-comment/>
     <color name="viewfinder_frame">#ff526F35</color>
     <color name="viewfinder_laser">#ff7FFF00</color>
     <color name="viewfinder_mask">#6003A9F4</color>
-    <!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/hTCPromotorSMTools/build/intermediates/exploded-aar/HTCPromotorSMTools/libraryBlasteringLibrary/unspecified/res/values/values.xml -->
+    <!-- From: file:/D:/Workspace_Android_Github/RCS-SA/hTCPromotorSMTools/build/intermediates/exploded-aar/RCS-SA/libraryBlasteringLibrary/unspecified/res/values/values.xml -->
     <eat-comment/>
     <color name="vpi__background_holo_dark">#ff000000</color>
     <color name="vpi__background_holo_light">#fff3f3f3</color>
@@ -297,7 +297,7 @@
     <declare-styleable name="View"><attr format="dimension" name="paddingStart"/><attr format="dimension" name="paddingEnd"/><attr name="android:focusable"/></declare-styleable>
     <declare-styleable name="ViewPagerIndicator"><attr format="reference" name="vpiCirclePageIndicatorStyle"/><attr format="reference" name="vpiIconPageIndicatorStyle"/><attr format="reference" name="vpiLinePageIndicatorStyle"/><attr format="reference" name="vpiTitlePageIndicatorStyle"/><attr format="reference" name="vpiTabPageIndicatorStyle"/><attr format="reference" name="vpiUnderlinePageIndicatorStyle"/></declare-styleable>
     <declare-styleable name="ViewStubCompat"><attr name="android:layout"/><attr name="android:inflatedId"/><attr name="android:id"/></declare-styleable>
-    <!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/hTCPromotorSMTools/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
+    <!-- From: file:/D:/Workspace_Android_Github/RCS-SA/hTCPromotorSMTools/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
     <eat-comment/>
     <dimen name="abc_action_bar_default_height_material">56dp</dimen>
     <dimen name="abc_action_bar_default_padding_material">4dp</dimen>
@@ -336,16 +336,16 @@
     <dimen name="abc_text_size_subtitle_material_toolbar">16dp</dimen>
     <dimen name="abc_text_size_title_material">20sp</dimen>
     <dimen name="abc_text_size_title_material_toolbar">20dp</dimen>
-    <!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/hTCPromotorSMTools/src/main/res/values/dimens.xml -->
+    <!-- From: file:/D:/Workspace_Android_Github/RCS-SA/hTCPromotorSMTools/src/main/res/values/dimens.xml -->
     <eat-comment/>
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
-    <!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/hTCPromotorSMTools/build/intermediates/exploded-aar/com.android.support/cardview-v7/23.1.1/res/values/values.xml -->
+    <!-- From: file:/D:/Workspace_Android_Github/RCS-SA/hTCPromotorSMTools/build/intermediates/exploded-aar/com.android.support/cardview-v7/23.1.1/res/values/values.xml -->
     <eat-comment/>
     <dimen name="cardview_compat_inset_shadow">1dp</dimen>
     <dimen name="cardview_default_elevation">2dp</dimen>
     <dimen name="cardview_default_radius">2dp</dimen>
-    <!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/hTCPromotorSMTools/build/intermediates/exploded-aar/HTCPromotorSMTools/libraryBlasteringLibrary/unspecified/res/values/values.xml -->
+    <!-- From: file:/D:/Workspace_Android_Github/RCS-SA/hTCPromotorSMTools/build/intermediates/exploded-aar/RCS-SA/libraryBlasteringLibrary/unspecified/res/values/values.xml -->
     <eat-comment/>
     <dimen name="default_circle_indicator_radius">3dp</dimen>
     <dimen name="default_circle_indicator_stroke_width">1dp</dimen>
@@ -360,7 +360,7 @@
     <dimen name="default_title_indicator_text_size">15dp</dimen>
     <dimen name="default_title_indicator_title_padding">5dp</dimen>
     <dimen name="default_title_indicator_top_padding">7dp</dimen>
-    <!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/hTCPromotorSMTools/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
+    <!-- From: file:/D:/Workspace_Android_Github/RCS-SA/hTCPromotorSMTools/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
     <eat-comment/>
     <item name="dialog_fixed_height_major" type="dimen">80%</item>
     <item name="dialog_fixed_height_minor" type="dimen">100%</item>
@@ -368,34 +368,34 @@
     <item name="dialog_fixed_width_minor" type="dimen">320dp</item>
     <item format="float" name="disabled_alpha_material_dark" type="dimen">0.30</item>
     <item format="float" name="disabled_alpha_material_light" type="dimen">0.26</item>
-    <!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/hTCPromotorSMTools/build/intermediates/exploded-aar/HTCPromotorSMTools/libraryBlasteringLibrary/unspecified/res/values/values.xml -->
+    <!-- From: file:/D:/Workspace_Android_Github/RCS-SA/hTCPromotorSMTools/build/intermediates/exploded-aar/RCS-SA/libraryBlasteringLibrary/unspecified/res/values/values.xml -->
     <eat-comment/>
     <dimen name="header_footer_left_right_padding">24dp</dimen>
     <dimen name="header_footer_top_bottom_padding">12dp</dimen>
-    <!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/hTCPromotorSMTools/src/main/res/values/template-dimens.xml -->
+    <!-- From: file:/D:/Workspace_Android_Github/RCS-SA/hTCPromotorSMTools/src/main/res/values/template-dimens.xml -->
     <eat-comment/>
     <dimen name="horizontal_page_margin">@dimen/margin_medium</dimen>
-    <!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/hTCPromotorSMTools/build/intermediates/exploded-aar/HTCPromotorSMTools/libraryBlasteringLibrary/unspecified/res/values/values.xml -->
+    <!-- From: file:/D:/Workspace_Android_Github/RCS-SA/hTCPromotorSMTools/build/intermediates/exploded-aar/RCS-SA/libraryBlasteringLibrary/unspecified/res/values/values.xml -->
     <eat-comment/>
     <dimen name="indicator_corner_radius">12dp</dimen>
     <dimen name="indicator_internal_padding">4dp</dimen>
     <dimen name="indicator_right_padding">10dp</dimen>
-    <!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/hTCPromotorSMTools/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.1.1/res/values/values.xml -->
+    <!-- From: file:/D:/Workspace_Android_Github/RCS-SA/hTCPromotorSMTools/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.1.1/res/values/values.xml -->
     <eat-comment/>
     <dimen name="item_touch_helper_max_drag_scroll_per_frame">20dp</dimen>
-    <!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/hTCPromotorSMTools/src/main/res/values/template-dimens.xml -->
+    <!-- From: file:/D:/Workspace_Android_Github/RCS-SA/hTCPromotorSMTools/src/main/res/values/template-dimens.xml -->
     <eat-comment/>
     <dimen name="margin_huge">64dp</dimen>
     <dimen name="margin_large">32dp</dimen>
     <dimen name="margin_medium">16dp</dimen>
     <dimen name="margin_small">8dp</dimen>
     <dimen name="margin_tiny">4dp</dimen>
-    <!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/hTCPromotorSMTools/build/intermediates/exploded-aar/HTCPromotorSMTools/libraryBlasteringLibrary/unspecified/res/values/values.xml -->
+    <!-- From: file:/D:/Workspace_Android_Github/RCS-SA/hTCPromotorSMTools/build/intermediates/exploded-aar/RCS-SA/libraryBlasteringLibrary/unspecified/res/values/values.xml -->
     <eat-comment/>
     <dimen name="padding_large">16dp</dimen>
     <dimen name="padding_medium">8dp</dimen>
     <dimen name="padding_small">8dp</dimen>
-    <!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/hTCPromotorSMTools/src/main/res/values/dimens.xml -->
+    <!-- From: file:/D:/Workspace_Android_Github/RCS-SA/hTCPromotorSMTools/src/main/res/values/dimens.xml -->
     <eat-comment/>
     <dimen name="size_label_btn">20sp</dimen>
     <dimen name="size_padding">10dp</dimen>
@@ -408,68 +408,68 @@
     <dimen name="size_text_smallest">12sp</dimen>
     <dimen name="size_text_standard">18sp</dimen>
     <dimen name="size_text_subjudul">22sp</dimen>
-    <!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/hTCPromotorSMTools/build/intermediates/exploded-aar/HTCPromotorSMTools/libraryBlasteringLibrary/unspecified/res/values/values.xml -->
+    <!-- From: file:/D:/Workspace_Android_Github/RCS-SA/hTCPromotorSMTools/build/intermediates/exploded-aar/RCS-SA/libraryBlasteringLibrary/unspecified/res/values/values.xml -->
     <eat-comment/>
     <dimen name="stgv_margin">8dp</dimen>
-    <!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/hTCPromotorSMTools/src/main/res/values/template-dimens.xml -->
+    <!-- From: file:/D:/Workspace_Android_Github/RCS-SA/hTCPromotorSMTools/src/main/res/values/template-dimens.xml -->
     <eat-comment/>
     <dimen name="vertical_page_margin">@dimen/margin_medium</dimen>
-    <!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/hTCPromotorSMTools/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
+    <!-- From: file:/D:/Workspace_Android_Github/RCS-SA/hTCPromotorSMTools/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
     <eat-comment/>
     <item name="action_bar_activity_content" type="id"/>
     <item name="action_bar_spinner" type="id"/>
     <item name="action_menu_divider" type="id"/>
     <item name="action_menu_presenter" type="id"/>
-    <!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/hTCPromotorSMTools/build/intermediates/exploded-aar/HTCPromotorSMTools/libraryAndroidQuickResponseCode/unspecified/res/values/values.xml -->
+    <!-- From: file:/D:/Workspace_Android_Github/RCS-SA/hTCPromotorSMTools/build/intermediates/exploded-aar/RCS-SA/libraryAndroidQuickResponseCode/unspecified/res/values/values.xml -->
     <eat-comment/>
     <item name="auto_focus" type="id"/>
     <item name="decode" type="id"/>
     <item name="decode_failed" type="id"/>
     <item name="decode_succeeded" type="id"/>
-    <!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/hTCPromotorSMTools/build/intermediates/exploded-aar/HTCPromotorSMTools/libraryBlasteringLibrary/unspecified/res/values/values.xml -->
+    <!-- From: file:/D:/Workspace_Android_Github/RCS-SA/hTCPromotorSMTools/build/intermediates/exploded-aar/RCS-SA/libraryBlasteringLibrary/unspecified/res/values/values.xml -->
     <eat-comment/>
     <item name="gridview" type="id"/>
-    <!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/hTCPromotorSMTools/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
+    <!-- From: file:/D:/Workspace_Android_Github/RCS-SA/hTCPromotorSMTools/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
     <eat-comment/>
     <item name="home" type="id"/>
-    <!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/hTCPromotorSMTools/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.1.1/res/values/values.xml -->
+    <!-- From: file:/D:/Workspace_Android_Github/RCS-SA/hTCPromotorSMTools/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.1.1/res/values/values.xml -->
     <eat-comment/>
     <item name="item_touch_helper_previous_elevation" type="id"/>
-    <!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/hTCPromotorSMTools/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
+    <!-- From: file:/D:/Workspace_Android_Github/RCS-SA/hTCPromotorSMTools/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
     <eat-comment/>
     <item name="progress_circular" type="id"/>
     <item name="progress_horizontal" type="id"/>
-    <!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/hTCPromotorSMTools/build/intermediates/exploded-aar/HTCPromotorSMTools/libraryAndroidQuickResponseCode/unspecified/res/values/values.xml -->
+    <!-- From: file:/D:/Workspace_Android_Github/RCS-SA/hTCPromotorSMTools/build/intermediates/exploded-aar/RCS-SA/libraryAndroidQuickResponseCode/unspecified/res/values/values.xml -->
     <eat-comment/>
     <item name="quit" type="id"/>
     <item name="restart_preview" type="id"/>
     <item name="return_scan_result" type="id"/>
-    <!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/hTCPromotorSMTools/build/intermediates/exploded-aar/HTCPromotorSMTools/libraryBlasteringLibrary/unspecified/res/values/values.xml -->
+    <!-- From: file:/D:/Workspace_Android_Github/RCS-SA/hTCPromotorSMTools/build/intermediates/exploded-aar/RCS-SA/libraryBlasteringLibrary/unspecified/res/values/values.xml -->
     <eat-comment/>
     <item name="scrollview" type="id"/>
-    <!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/hTCPromotorSMTools/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
+    <!-- From: file:/D:/Workspace_Android_Github/RCS-SA/hTCPromotorSMTools/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
     <eat-comment/>
     <item name="split_action_bar" type="id"/>
-    <!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/hTCPromotorSMTools/build/intermediates/exploded-aar/HTCPromotorSMTools/libraryBlasteringLibrary/unspecified/res/values/values.xml -->
+    <!-- From: file:/D:/Workspace_Android_Github/RCS-SA/hTCPromotorSMTools/build/intermediates/exploded-aar/RCS-SA/libraryBlasteringLibrary/unspecified/res/values/values.xml -->
     <eat-comment/>
     <item name="stgv" type="id"/>
-    <!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/hTCPromotorSMTools/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
+    <!-- From: file:/D:/Workspace_Android_Github/RCS-SA/hTCPromotorSMTools/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
     <eat-comment/>
     <item name="up" type="id"/>
-    <!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/hTCPromotorSMTools/build/intermediates/exploded-aar/HTCPromotorSMTools/libraryBlasteringLibrary/unspecified/res/values/values.xml -->
+    <!-- From: file:/D:/Workspace_Android_Github/RCS-SA/hTCPromotorSMTools/build/intermediates/exploded-aar/RCS-SA/libraryBlasteringLibrary/unspecified/res/values/values.xml -->
     <eat-comment/>
     <item name="webview" type="id"/>
-    <!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/hTCPromotorSMTools/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
+    <!-- From: file:/D:/Workspace_Android_Github/RCS-SA/hTCPromotorSMTools/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
     <eat-comment/>
     <integer name="abc_max_action_buttons">2</integer>
-    <!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/hTCPromotorSMTools/build/intermediates/exploded-aar/HTCPromotorSMTools/libraryBlasteringLibrary/unspecified/res/values/values.xml -->
+    <!-- From: file:/D:/Workspace_Android_Github/RCS-SA/hTCPromotorSMTools/build/intermediates/exploded-aar/RCS-SA/libraryBlasteringLibrary/unspecified/res/values/values.xml -->
     <eat-comment/>
     <integer name="default_circle_indicator_orientation">0</integer>
     <integer name="default_title_indicator_footer_indicator_style">2</integer>
     <integer name="default_title_indicator_line_position">0</integer>
     <integer name="default_underline_indicator_fade_delay">300</integer>
     <integer name="default_underline_indicator_fade_length">400</integer>
-    <!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/hTCPromotorSMTools/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
+    <!-- From: file:/D:/Workspace_Android_Github/RCS-SA/hTCPromotorSMTools/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
     <eat-comment/>
     <string name="abc_action_bar_home_description">Navigate home</string>
     <string name="abc_action_bar_home_description_format">%1$s, %2$s</string>
@@ -487,19 +487,19 @@
     <string name="abc_shareactionprovider_share_with">Share with</string>
     <string name="abc_shareactionprovider_share_with_application">Share with %s</string>
     <string name="abc_toolbar_collapse_description">Collapse</string>
-    <!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/hTCPromotorSMTools/src/main/res/values/strings.xml -->
+    <!-- From: file:/D:/Workspace_Android_Github/RCS-SA/hTCPromotorSMTools/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="absen_masuk">In</string>
     <string name="absen_pulang">Out</string>
     <string name="action_settings">Settings</string>
     <string name="app_name">HTC-SA</string>
-    <!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/hTCPromotorSMTools/build/intermediates/exploded-aar/HTCPromotorSMTools/libraryAndroidQuickResponseCode/unspecified/res/values/values.xml -->
+    <!-- From: file:/D:/Workspace_Android_Github/RCS-SA/hTCPromotorSMTools/build/intermediates/exploded-aar/RCS-SA/libraryAndroidQuickResponseCode/unspecified/res/values/values.xml -->
     <eat-comment/>
     <string name="barcode_image">Barcode Image</string>
-    <!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/hTCPromotorSMTools/build/intermediates/exploded-aar/HTCPromotorSMTools/libraryBlasteringLibrary/unspecified/res/values/values.xml -->
+    <!-- From: file:/D:/Workspace_Android_Github/RCS-SA/hTCPromotorSMTools/build/intermediates/exploded-aar/RCS-SA/libraryBlasteringLibrary/unspecified/res/values/values.xml -->
     <eat-comment/>
     <string name="cancel">Cancel</string>
-    <!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/hTCPromotorSMTools/build/intermediates/exploded-aar/HTCPromotorSMTools/libraryAndroidQuickResponseCode/unspecified/res/values/values.xml -->
+    <!-- From: file:/D:/Workspace_Android_Github/RCS-SA/hTCPromotorSMTools/build/intermediates/exploded-aar/RCS-SA/libraryAndroidQuickResponseCode/unspecified/res/values/values.xml -->
     <eat-comment/>
     <string name="capture_name">QR Code Capture</string>
     <string name="contents_contact">Contact info</string>
@@ -509,14 +509,14 @@
     <string name="contents_sms">SMS address</string>
     <string name="contents_text">Plain text</string>
     <string name="decoder_name">QR Code Decoder</string>
-    <!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/hTCPromotorSMTools/build/intermediates/exploded-aar/HTCPromotorSMTools/libraryBlasteringLibrary/unspecified/res/values/values.xml -->
+    <!-- From: file:/D:/Workspace_Android_Github/RCS-SA/hTCPromotorSMTools/build/intermediates/exploded-aar/RCS-SA/libraryBlasteringLibrary/unspecified/res/values/values.xml -->
     <eat-comment/>
     <string name="demo_max_label"/>
     <string name="demo_min_label"/>
-    <!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/hTCPromotorSMTools/build/intermediates/exploded-aar/HTCPromotorSMTools/libraryAndroidQuickResponseCode/unspecified/res/values/values.xml -->
+    <!-- From: file:/D:/Workspace_Android_Github/RCS-SA/hTCPromotorSMTools/build/intermediates/exploded-aar/RCS-SA/libraryAndroidQuickResponseCode/unspecified/res/values/values.xml -->
     <eat-comment/>
     <string name="encoder_name">QR Code Encoder</string>
-    <!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/hTCPromotorSMTools/src/main/res/values/strings.xml -->
+    <!-- From: file:/D:/Workspace_Android_Github/RCS-SA/hTCPromotorSMTools/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="hello_world">Hello world!</string>
     <string name="hint_brand">Brand</string>
@@ -536,7 +536,7 @@
     <string name="hint_wajib_diisi">Required</string>
     <string name="max_1">(*) 1 Image Max</string>
     <string name="max_2">(*) 4 Image Max</string>
-    <!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/hTCPromotorSMTools/build/intermediates/exploded-aar/HTCPromotorSMTools/libraryAndroidQuickResponseCode/unspecified/res/values/values.xml -->
+    <!-- From: file:/D:/Workspace_Android_Github/RCS-SA/hTCPromotorSMTools/build/intermediates/exploded-aar/RCS-SA/libraryAndroidQuickResponseCode/unspecified/res/values/values.xml -->
     <eat-comment/>
     <string name="msg_default_contents">Contents</string>
     <string name="msg_default_format">Format</string>
@@ -545,7 +545,7 @@
     <string name="msg_default_status">Place a barcode inside the viewfinder rectangle to scan it.</string>
     <string name="msg_default_time">Time</string>
     <string name="msg_default_type">Type</string>
-    <!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/hTCPromotorSMTools/build/intermediates/exploded-aar/HTCPromotorSMTools/libraryBlasteringLibrary/unspecified/res/values/values.xml -->
+    <!-- From: file:/D:/Workspace_Android_Github/RCS-SA/hTCPromotorSMTools/build/intermediates/exploded-aar/RCS-SA/libraryBlasteringLibrary/unspecified/res/values/values.xml -->
     <eat-comment/>
     <string name="no_storage_card">No storage card</string>
     <string name="not_enough_space">Not enough space</string>
@@ -557,7 +557,7 @@
     <string name="pull_to_refresh_refreshing_label">Loading...</string>
     <string name="pull_to_refresh_release_label">Release to refresh...</string>
     <string name="pull_to_refresh_tap_label">Tap to refresh...</string>
-    <!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/hTCPromotorSMTools/build/intermediates/exploded-aar/HTCPromotorSMTools/libraryAndroidQuickResponseCode/unspecified/res/values/values.xml -->
+    <!-- From: file:/D:/Workspace_Android_Github/RCS-SA/hTCPromotorSMTools/build/intermediates/exploded-aar/RCS-SA/libraryAndroidQuickResponseCode/unspecified/res/values/values.xml -->
     <eat-comment/>
     <string name="result_address_book">Found contact info</string>
     <string name="result_calendar">Found calendar event</string>
@@ -570,12 +570,12 @@
     <string name="result_text">Found plain text</string>
     <string name="result_uri">Found URL</string>
     <string name="result_wifi">Found WLAN Configuration</string>
-    <!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/hTCPromotorSMTools/build/intermediates/exploded-aar/HTCPromotorSMTools/libraryBlasteringLibrary/unspecified/res/values/values.xml -->
+    <!-- From: file:/D:/Workspace_Android_Github/RCS-SA/hTCPromotorSMTools/build/intermediates/exploded-aar/RCS-SA/libraryBlasteringLibrary/unspecified/res/values/values.xml -->
     <eat-comment/>
     <string name="save">Save</string>
     <string name="saving_image">Saving image</string>
     <string name="title_activity_main">Twitter</string>
-    <!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/hTCPromotorSMTools/src/main/res/values/strings.xml -->
+    <!-- From: file:/D:/Workspace_Android_Github/RCS-SA/hTCPromotorSMTools/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="txt_absen">Absent</string>
     <string name="txt_absen_Status">In/Out</string>
@@ -637,12 +637,12 @@
     <string name="txt_upload_gallery">Upload From Gallery</string>
     <string name="txt_warna_produk">Product Color</string>
     <string name="txt_ya">Yes</string>
-    <!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/hTCPromotorSMTools/build/intermediates/exploded-aar/HTCPromotorSMTools/libraryAndroidQuickResponseCode/unspecified/res/values/values.xml -->
+    <!-- From: file:/D:/Workspace_Android_Github/RCS-SA/hTCPromotorSMTools/build/intermediates/exploded-aar/RCS-SA/libraryAndroidQuickResponseCode/unspecified/res/values/values.xml -->
     <eat-comment/>
     <string name="wifi_changing_network">Changing Network</string>
     <string name="wifi_ssid_label">Network Name</string>
     <string name="wifi_type_label">Type</string>
-    <!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/hTCPromotorSMTools/src/main/res/values/styles.xml -->
+    <!-- From: file:/D:/Workspace_Android_Github/RCS-SA/hTCPromotorSMTools/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="AppBaseTheme" parent="Theme.AppCompat.Light">
         <!--
@@ -659,10 +659,10 @@
         <item name="windowActionBar">false</item>
         <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
     </style>
-    <!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/hTCPromotorSMTools/src/main/res/values/template-styles.xml -->
+    <!-- From: file:/D:/Workspace_Android_Github/RCS-SA/hTCPromotorSMTools/src/main/res/values/template-styles.xml -->
     <eat-comment/>
     <style name="AppTheme2" parent="Theme.Sample"/>
-    <!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/hTCPromotorSMTools/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
+    <!-- From: file:/D:/Workspace_Android_Github/RCS-SA/hTCPromotorSMTools/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
     <eat-comment/>
     <style name="Base.TextAppearance.AppCompat" parent="android:TextAppearance">
         <item name="android:textColor">?android:textColorPrimary</item>
@@ -1416,7 +1416,7 @@
         <item name="android:scaleType">center</item>
         <item name="android:background">?attr/selectableItemBackground</item>
     </style>
-    <!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/hTCPromotorSMTools/build/intermediates/exploded-aar/com.android.support/cardview-v7/23.1.1/res/values/values.xml -->
+    <!-- From: file:/D:/Workspace_Android_Github/RCS-SA/hTCPromotorSMTools/build/intermediates/exploded-aar/com.android.support/cardview-v7/23.1.1/res/values/values.xml -->
     <eat-comment/>
     <style name="CardView">
         <item name="cardBackgroundColor">@color/cardview_light_background</item>
@@ -1432,7 +1432,7 @@
     <style name="CardView.Light">
         <item name="cardBackgroundColor">@color/cardview_light_background</item>
     </style>
-    <!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/hTCPromotorSMTools/build/intermediates/exploded-aar/HTCPromotorSMTools/libraryBlasteringLibrary/unspecified/res/values/values.xml -->
+    <!-- From: file:/D:/Workspace_Android_Github/RCS-SA/hTCPromotorSMTools/build/intermediates/exploded-aar/RCS-SA/libraryBlasteringLibrary/unspecified/res/values/values.xml -->
     <eat-comment/>
     <style name="CropButton">
         <item name="android:layout_margin">1dp</item>
@@ -1444,7 +1444,7 @@
         <item name="android:layout_weight">1</item>
         <item name="android:background">@drawable/selector_crop_button</item>
     </style>
-    <!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/hTCPromotorSMTools/src/main/res/values/styles.xml -->
+    <!-- From: file:/D:/Workspace_Android_Github/RCS-SA/hTCPromotorSMTools/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="DialogTheme" parent="@android:style/Theme.Dialog">
         <item name="android:windowBackground">@android:color/transparent</item>
@@ -1470,7 +1470,7 @@
     <item name="android:windowNoTitle">true</item>
     <item name="windowActionBar">false</item>
 </style>
-    <!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/hTCPromotorSMTools/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
+    <!-- From: file:/D:/Workspace_Android_Github/RCS-SA/hTCPromotorSMTools/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
     <eat-comment/>
     <style name="Platform.AppCompat" parent="android:Theme">
         <item name="android:windowNoTitle">true</item>
@@ -1679,13 +1679,13 @@
     <style name="TextAppearance.AppCompat.Widget.PopupMenu.Large" parent="Base.TextAppearance.AppCompat.Widget.PopupMenu.Large"/>
     <style name="TextAppearance.AppCompat.Widget.PopupMenu.Small" parent="Base.TextAppearance.AppCompat.Widget.PopupMenu.Small"/>
     <style name="TextAppearance.AppCompat.Widget.Switch" parent="Base.TextAppearance.AppCompat.Widget.Switch"/>
-    <!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/hTCPromotorSMTools/build/intermediates/exploded-aar/HTCPromotorSMTools/libraryBlasteringLibrary/unspecified/res/values/values.xml -->
+    <!-- From: file:/D:/Workspace_Android_Github/RCS-SA/hTCPromotorSMTools/build/intermediates/exploded-aar/RCS-SA/libraryBlasteringLibrary/unspecified/res/values/values.xml -->
     <eat-comment/>
     <style name="TextAppearance.TabPageIndicator" parent="Widget">
         <item name="android:textStyle">bold</item>
         <item name="android:textColor">@color/vpi__dark_theme</item>
     </style>
-    <!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/hTCPromotorSMTools/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
+    <!-- From: file:/D:/Workspace_Android_Github/RCS-SA/hTCPromotorSMTools/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
     <eat-comment/>
     <style name="TextAppearance.Widget.AppCompat.ExpandedMenu.Item" parent="Base.TextAppearance.Widget.AppCompat.ExpandedMenu.Item"/>
     <style name="TextAppearance.Widget.AppCompat.Toolbar.Subtitle" parent="Base.TextAppearance.Widget.AppCompat.Toolbar.Subtitle"/>
@@ -1706,26 +1706,26 @@
         <item name="windowActionBar">false</item>
         <item name="android:windowNoTitle">true</item>
     </style>
-    <!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/hTCPromotorSMTools/src/main/res/values/template-styles.xml -->
+    <!-- From: file:/D:/Workspace_Android_Github/RCS-SA/hTCPromotorSMTools/src/main/res/values/template-styles.xml -->
     <eat-comment/>
     <style name="Theme.Base" parent="android:Theme.Light"/>
-    <!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/hTCPromotorSMTools/build/intermediates/exploded-aar/HTCPromotorSMTools/libraryBlasteringLibrary/unspecified/res/values/values.xml -->
+    <!-- From: file:/D:/Workspace_Android_Github/RCS-SA/hTCPromotorSMTools/build/intermediates/exploded-aar/RCS-SA/libraryBlasteringLibrary/unspecified/res/values/values.xml -->
     <eat-comment/>
     <style name="Theme.PageIndicatorDefaults" parent="android:Theme">
         <item name="vpiIconPageIndicatorStyle">@style/Widget.IconPageIndicator</item>
         <item name="vpiTabPageIndicatorStyle">@style/Widget.TabPageIndicator</item>
     </style>
-    <!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/hTCPromotorSMTools/src/main/res/values/template-styles.xml -->
+    <!-- From: file:/D:/Workspace_Android_Github/RCS-SA/hTCPromotorSMTools/src/main/res/values/template-styles.xml -->
     <eat-comment/>
     <style name="Theme.Sample" parent="Theme.Base"/>
-    <!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/hTCPromotorSMTools/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
+    <!-- From: file:/D:/Workspace_Android_Github/RCS-SA/hTCPromotorSMTools/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
     <eat-comment/>
     <style name="ThemeOverlay.AppCompat" parent="Base.ThemeOverlay.AppCompat"/>
     <style name="ThemeOverlay.AppCompat.ActionBar" parent="Base.ThemeOverlay.AppCompat.ActionBar"/>
     <style name="ThemeOverlay.AppCompat.Dark" parent="Base.ThemeOverlay.AppCompat.Dark"/>
     <style name="ThemeOverlay.AppCompat.Dark.ActionBar" parent="Base.ThemeOverlay.AppCompat.Dark.ActionBar"/>
     <style name="ThemeOverlay.AppCompat.Light" parent="Base.ThemeOverlay.AppCompat.Light"/>
-    <!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/hTCPromotorSMTools/src/main/res/values/styles.xml -->
+    <!-- From: file:/D:/Workspace_Android_Github/RCS-SA/hTCPromotorSMTools/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="ToolBarFullscreenStyle" parent="Theme.AppCompat.Light">
         <item name="android:windowNoTitle">true</item>
@@ -1744,10 +1744,10 @@
         <item name="colorPrimary">@color/primaryColor</item>
         <item name="colorPrimaryDark">@color/primaryColorDark</item>
     </style>
-    <!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/hTCPromotorSMTools/src/main/res/values/template-styles.xml -->
+    <!-- From: file:/D:/Workspace_Android_Github/RCS-SA/hTCPromotorSMTools/src/main/res/values/template-styles.xml -->
     <eat-comment/>
     <style name="Widget"/>
-    <!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/hTCPromotorSMTools/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
+    <!-- From: file:/D:/Workspace_Android_Github/RCS-SA/hTCPromotorSMTools/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
     <eat-comment/>
     <style name="Widget.AppCompat.ActionBar" parent="Base.Widget.AppCompat.ActionBar"/>
     <style name="Widget.AppCompat.ActionBar.Solid" parent="Base.Widget.AppCompat.ActionBar.Solid"/>
@@ -1802,13 +1802,13 @@
     <style name="Widget.AppCompat.Spinner.DropDown.ActionBar" parent="Base.Widget.AppCompat.Spinner.DropDown.ActionBar"/>
     <style name="Widget.AppCompat.Toolbar" parent="Base.Widget.AppCompat.Toolbar"/>
     <style name="Widget.AppCompat.Toolbar.Button.Navigation" parent="Base.Widget.AppCompat.Toolbar.Button.Navigation"/>
-    <!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/hTCPromotorSMTools/build/intermediates/exploded-aar/HTCPromotorSMTools/libraryBlasteringLibrary/unspecified/res/values/values.xml -->
+    <!-- From: file:/D:/Workspace_Android_Github/RCS-SA/hTCPromotorSMTools/build/intermediates/exploded-aar/RCS-SA/libraryBlasteringLibrary/unspecified/res/values/values.xml -->
     <eat-comment/>
     <style name="Widget.IconPageIndicator" parent="Widget">
         <item name="android:layout_marginLeft">6dp</item>
         <item name="android:layout_marginRight">6dp</item>
     </style>
-    <!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/hTCPromotorSMTools/src/main/res/values/template-styles.xml -->
+    <!-- From: file:/D:/Workspace_Android_Github/RCS-SA/hTCPromotorSMTools/src/main/res/values/template-styles.xml -->
     <eat-comment/>
     <style name="Widget.SampleMessage">
         <item name="android:textAppearance">?android:textAppearanceMedium</item>
@@ -1820,7 +1820,7 @@
         <item name="android:shadowDy">-3.5</item>
         <item name="android:shadowRadius">2</item>
     </style>
-    <!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/hTCPromotorSMTools/build/intermediates/exploded-aar/HTCPromotorSMTools/libraryBlasteringLibrary/unspecified/res/values/values.xml -->
+    <!-- From: file:/D:/Workspace_Android_Github/RCS-SA/hTCPromotorSMTools/build/intermediates/exploded-aar/RCS-SA/libraryBlasteringLibrary/unspecified/res/values/values.xml -->
     <eat-comment/>
     <style name="Widget.TabPageIndicator" parent="Widget">
         <item name="android:gravity">center</item>
