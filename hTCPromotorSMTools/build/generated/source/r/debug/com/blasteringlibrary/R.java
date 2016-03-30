@@ -285,18 +285,18 @@ public final class R {
 		public static final int cropimage = 0x7f030029;
 		public static final int custom_alert_dialog = 0x7f03002a;
 		public static final int drawer_list_item = 0x7f03002c;
-		public static final int layout_loading_footer = 0x7f030041;
-		public static final int load_more_footer = 0x7f030044;
-		public static final int main = 0x7f030045;
-		public static final int mainview = 0x7f030046;
-		public static final int my_blog = 0x7f030047;
-		public static final int pull_to_refresh_header = 0x7f030049;
-		public static final int pull_to_refresh_header_horizontal = 0x7f03004a;
-		public static final int pull_to_refresh_header_vertical = 0x7f03004b;
-		public static final int ray_menu = 0x7f03004c;
-		public static final int rounded_corner = 0x7f03004d;
-		public static final int twitt_dialog = 0x7f030054;
-		public static final int twitter_email_dialog = 0x7f030055;
+		public static final int layout_loading_footer = 0x7f030042;
+		public static final int load_more_footer = 0x7f030045;
+		public static final int main = 0x7f030046;
+		public static final int mainview = 0x7f030047;
+		public static final int my_blog = 0x7f030048;
+		public static final int pull_to_refresh_header = 0x7f03004a;
+		public static final int pull_to_refresh_header_horizontal = 0x7f03004b;
+		public static final int pull_to_refresh_header_vertical = 0x7f03004c;
+		public static final int ray_menu = 0x7f03004d;
+		public static final int rounded_corner = 0x7f03004e;
+		public static final int twitt_dialog = 0x7f030055;
+		public static final int twitter_email_dialog = 0x7f030056;
 	}
 	public static final class menu {
 		public static final int main = 0x7f0e0001;

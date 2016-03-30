@@ -2,144 +2,186 @@
 <items version="2" >
 
     <item
-        jar="D:\Workspace_Android_Github\RCS-SA\hTCPromotorSMTools\build\intermediates\exploded-aar\RCS-SA\libraryBlasteringLibrary\unspecified\jars\libs\signpost-core-1.2.1.1.jar"
+        jar="/Users/macbook/Desktop/Android Studio Repo Workspace/RCS-SA/hTCPromotorSMTools/build/intermediates/exploded-aar/RCS-SA/libraryCircularImageView/unspecified/jars/classes.jar"
         jumboMode="false"
         revision="23.0.1"
-        sha1="d1b39a438178bc885d724458de64cee33f1932a6">
-        <dex dex="D:\Workspace_Android_Github\RCS-SA\hTCPromotorSMTools\build\intermediates\pre-dexed\debug\signpost-core-1.2.1.1-f1dc35e58282aaa7b95a8e3dd7015107cbd2654e.jar" />
+        sha1="755c4ce48c7fd814e632112550d33443615c1507">
+        <dex dex="/Users/macbook/Desktop/Android Studio Repo Workspace/RCS-SA/hTCPromotorSMTools/build/intermediates/pre-dexed/debug/classes-8ca25c75a270fadb56b0a83b6c8ffc583471748e.jar" />
     </item>
     <item
-        jar="D:\Workspace_Android_Github\RCS-SA\hTCPromotorSMTools\build\intermediates\exploded-aar\RCS-SA\libraryBlasteringLibrary\unspecified\jars\libs\twitter4j-core-3.0.3.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="fd32f6a458405bcdd77b68d0c6099a65203da009">
-        <dex dex="D:\Workspace_Android_Github\RCS-SA\hTCPromotorSMTools\build\intermediates\pre-dexed\debug\twitter4j-core-3.0.3-f8bbd82b6e948681c2f91599f8a4c3e285fdf491.jar" />
-    </item>
-    <item
-        jar="D:\Workspace_Android_Github\RCS-SA\hTCPromotorSMTools\build\intermediates\exploded-aar\RCS-SA\libraryBlasteringLibrary\unspecified\jars\libs\signpost-commonshttp4-1.2.1.1.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="576194c2d9ecf9382ed5ab913de8b36640507847">
-        <dex dex="D:\Workspace_Android_Github\RCS-SA\hTCPromotorSMTools\build\intermediates\pre-dexed\debug\signpost-commonshttp4-1.2.1.1-cc4afc96ecf60be61ab573cfcd7c4dcb7e255c3c.jar" />
-    </item>
-    <item
-        jar="D:\Workspace_Android_Github\RCS-SA\hTCPromotorSMTools\libs\picasso-2.0.0.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="fb8144776ae3c72c62d66b7f0bdb2580b6f0668c">
-        <dex dex="D:\Workspace_Android_Github\RCS-SA\hTCPromotorSMTools\build\intermediates\pre-dexed\debug\picasso-2.0.0-671df459f5802d0d6ac276bb2b29ad845d1de147.jar" />
-    </item>
-    <item
-        jar="D:\Workspace_Android_Github\RCS-SA\hTCPromotorSMTools\libs\AndroidSwipeLayout-v1.1.8.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="c092dd2f2bdea6c04c5bf4122db66cb3495a3c35">
-        <dex dex="D:\Workspace_Android_Github\RCS-SA\hTCPromotorSMTools\build\intermediates\pre-dexed\debug\AndroidSwipeLayout-v1.1.8-6d081a53d50cedfc301cd86c1a1e339ba35f4bb4.jar" />
-    </item>
-    <item
-        jar="D:\Workspace_Android_Github\RCS-SA\hTCPromotorSMTools\build\intermediates\exploded-aar\com.android.support\cardview-v7\23.1.1\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="5e412e954a24c5310a459c09870e4e2081aceb03">
-        <dex dex="D:\Workspace_Android_Github\RCS-SA\hTCPromotorSMTools\build\intermediates\pre-dexed\debug\classes-029e656a36a447ea54cf02ded5e5b6ffdb09ceea.jar" />
-    </item>
-    <item
-        jar="D:\Workspace_Android_Github\RCS-SA\hTCPromotorSMTools\libs\recyclerview-animators-1.1.3.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="84c8b9e5ec781ba16ace35573ab5237f0ca391be">
-        <dex dex="D:\Workspace_Android_Github\RCS-SA\hTCPromotorSMTools\build\intermediates\pre-dexed\debug\recyclerview-animators-1.1.3-435b6d2bceb892f0a3f56e4b5fa05866a33e9e26.jar" />
-    </item>
-    <item
-        jar="D:\Workspace_Android_Github\RCS-SA\hTCPromotorSMTools\build\intermediates\exploded-aar\RCS-SA\libraryAndroidQuickResponseCode\unspecified\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="3404734be1c969fc9d3c8222cbfe5563b0a7e186">
-        <dex dex="D:\Workspace_Android_Github\RCS-SA\hTCPromotorSMTools\build\intermediates\pre-dexed\debug\classes-c2b7459bcf6c54c70682ed7128558d2c88fe0659.jar" />
-    </item>
-    <item
-        jar="D:\Workspace_Android_Github\RCS-SA\hTCPromotorSMTools\libs\ion-2.0.1.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="01bfd0a773b3e6f55299bf495c817141eb1facb8">
-        <dex dex="D:\Workspace_Android_Github\RCS-SA\hTCPromotorSMTools\build\intermediates\pre-dexed\debug\ion-2.0.1-c780a3837273a1432e6e2c6e6c99b49cfd6d3e27.jar" />
-    </item>
-    <item
-        jar="D:\Workspace_Android_Github\RCS-SA\hTCPromotorSMTools\build\intermediates\exploded-aar\RCS-SA\libraryCircularImageView\unspecified\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="879eb34861652dfd4015f276416ee284ab6c466a">
-        <dex dex="D:\Workspace_Android_Github\RCS-SA\hTCPromotorSMTools\build\intermediates\pre-dexed\debug\classes-17e01a0ea18d60fb67b1302e41009d31199996d6.jar" />
-    </item>
-    <item
-        jar="D:\Workspace_Android_Github\RCS-SA\hTCPromotorSMTools\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="6cbc7773921fcfedbe55657578f0cbfe614778dc">
-        <dex dex="D:\Workspace_Android_Github\RCS-SA\hTCPromotorSMTools\build\intermediates\pre-dexed\debug\classes-1b10c5fbfecc2d65706a8ea67438976611b9df7d.jar" />
-    </item>
-    <item
-        jar="D:\Workspace_Android_Github\RCS-SA\hTCPromotorSMTools\build\intermediates\exploded-aar\RCS-SA\libraryBlasteringLibrary\unspecified\jars\libs\httpclient-4.0.1.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="1d7d28fa738bdbfe4fbd895d9486308999bdf440">
-        <dex dex="D:\Workspace_Android_Github\RCS-SA\hTCPromotorSMTools\build\intermediates\pre-dexed\debug\httpclient-4.0.1-9b7643d819b8f9c3b90062b2963c12489f03da15.jar" />
-    </item>
-    <item
-        jar="D:\adt-bundle-windows-x86\sdk\extras\android\m2repository\com\android\support\support-annotations\23.1.1\support-annotations-23.1.1.jar"
+        jar="/Users/macbook/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.1.1/support-annotations-23.1.1.jar"
         jumboMode="false"
         revision="23.0.1"
         sha1="8d680ba5a623724d1fb0e81c36a790f023a6cede">
-        <dex dex="D:\Workspace_Android_Github\RCS-SA\hTCPromotorSMTools\build\intermediates\pre-dexed\debug\support-annotations-23.1.1-b0bc2dc07c2e545641b13fcf1df72bf5dd7dd161.jar" />
+        <dex dex="/Users/macbook/Desktop/Android Studio Repo Workspace/RCS-SA/hTCPromotorSMTools/build/intermediates/pre-dexed/debug/support-annotations-23.1.1-715731ce6596485188671280c869b0bc4a0ac061.jar" />
     </item>
     <item
-        jar="D:\Workspace_Android_Github\RCS-SA\hTCPromotorSMTools\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\jars\libs\internal_impl-23.1.1.jar"
+        jar="/Users/macbook/Desktop/Android Studio Repo Workspace/RCS-SA/hTCPromotorSMTools/libs/AndroidSwipeLayout-v1.1.8.jar"
         jumboMode="false"
         revision="23.0.1"
-        sha1="a4de9c81ae239414e1ed0f86441b02abaf29bca9">
-        <dex dex="D:\Workspace_Android_Github\RCS-SA\hTCPromotorSMTools\build\intermediates\pre-dexed\debug\internal_impl-23.1.1-0efaf7f1ab17d54974639ec9eb81c3e767c5890f.jar" />
+        sha1="c092dd2f2bdea6c04c5bf4122db66cb3495a3c35">
+        <dex dex="/Users/macbook/Desktop/Android Studio Repo Workspace/RCS-SA/hTCPromotorSMTools/build/intermediates/pre-dexed/debug/AndroidSwipeLayout-v1.1.8-be51608614fe4a30df3e5f800e66c04795acb058.jar" />
     </item>
     <item
-        jar="D:\Workspace_Android_Github\RCS-SA\hTCPromotorSMTools\build\intermediates\exploded-aar\RCS-SA\libraryBlasteringLibrary\unspecified\jars\classes.jar"
+        jar="/Users/macbook/Desktop/Android Studio Repo Workspace/RCS-SA/hTCPromotorSMTools/build/intermediates/exploded-aar/RCS-SA/libraryBlasteringLibrary/unspecified/jars/libs/picasso-2.0.0.jar"
         jumboMode="false"
         revision="23.0.1"
-        sha1="926ae9c9da01a9baa02a6b5e1cfd6ec438bf7c5e">
-        <dex dex="D:\Workspace_Android_Github\RCS-SA\hTCPromotorSMTools\build\intermediates\pre-dexed\debug\classes-e83652ce986e30b5822a10c58772e6074b61858b.jar" />
+        sha1="fb8144776ae3c72c62d66b7f0bdb2580b6f0668c">
+        <dex dex="/Users/macbook/Desktop/Android Studio Repo Workspace/RCS-SA/hTCPromotorSMTools/build/intermediates/pre-dexed/debug/picasso-2.0.0-99269283d9c13b16cf57c5a22b0a1a5e90249dec.jar" />
     </item>
     <item
-        jar="D:\Workspace_Android_Github\RCS-SA\hTCPromotorSMTools\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.1.1\jars\classes.jar"
+        jar="/Users/macbook/Desktop/Android Studio Repo Workspace/RCS-SA/hTCPromotorSMTools/build/intermediates/exploded-aar/RCS-SA/libraryBlasteringLibrary/unspecified/jars/libs/httpclient-4.0.1.jar"
         jumboMode="false"
         revision="23.0.1"
-        sha1="09c5e804bc67fc0580360043dff067df574a60d4">
-        <dex dex="D:\Workspace_Android_Github\RCS-SA\hTCPromotorSMTools\build\intermediates\pre-dexed\debug\classes-cc761f0d2d799c88b14b30424fa93e5dd3aeec1c.jar" />
+        sha1="1d7d28fa738bdbfe4fbd895d9486308999bdf440">
+        <dex dex="/Users/macbook/Desktop/Android Studio Repo Workspace/RCS-SA/hTCPromotorSMTools/build/intermediates/pre-dexed/debug/httpclient-4.0.1-04a3e019e32a200ba8de7f23d395662d5e6eb145.jar" />
     </item>
     <item
-        jar="D:\Workspace_Android_Github\RCS-SA\hTCPromotorSMTools\libs\devsmartlib.jar"
+        jar="/Users/macbook/Desktop/Android Studio Repo Workspace/RCS-SA/hTCPromotorSMTools/libs/devsmartlib.jar"
         jumboMode="false"
         revision="23.0.1"
         sha1="8874ca4c8cc30152d52f3c81d404661bc715be16">
-        <dex dex="D:\Workspace_Android_Github\RCS-SA\hTCPromotorSMTools\build\intermediates\pre-dexed\debug\devsmartlib-594aa4ccdd5b7dc38ea16b4b692fc163f69cb133.jar" />
+        <dex dex="/Users/macbook/Desktop/Android Studio Repo Workspace/RCS-SA/hTCPromotorSMTools/build/intermediates/pre-dexed/debug/devsmartlib-d926f8ba2071c7c7fc0a4c7f37cf662a95185fd5.jar" />
     </item>
     <item
-        jar="D:\Workspace_Android_Github\RCS-SA\hTCPromotorSMTools\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.3\jars\classes.jar"
+        jar="/Users/macbook/Desktop/Android Studio Repo Workspace/RCS-SA/hTCPromotorSMTools/libs/recyclerview-animators-1.1.3.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="84c8b9e5ec781ba16ace35573ab5237f0ca391be">
+        <dex dex="/Users/macbook/Desktop/Android Studio Repo Workspace/RCS-SA/hTCPromotorSMTools/build/intermediates/pre-dexed/debug/recyclerview-animators-1.1.3-1556080db0b5ea0ef6aec923de48ed8d288c6083.jar" />
+    </item>
+    <item
+        jar="/Users/macbook/Desktop/Android Studio Repo Workspace/RCS-SA/hTCPromotorSMTools/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/jars/classes.jar"
         jumboMode="false"
         revision="23.0.1"
         sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
-        <dex dex="D:\Workspace_Android_Github\RCS-SA\hTCPromotorSMTools\build\intermediates\pre-dexed\debug\classes-c16e05e149d04a5bdea35eb5c9e19ac909b58e86.jar" />
+        <dex dex="/Users/macbook/Desktop/Android Studio Repo Workspace/RCS-SA/hTCPromotorSMTools/build/intermediates/pre-dexed/debug/classes-883a1424edfe8a736603d650e2934e4075555254.jar" />
     </item>
     <item
-        jar="D:\Workspace_Android_Github\RCS-SA\hTCPromotorSMTools\build\intermediates\exploded-aar\RCS-SA\libraryBlasteringLibrary\unspecified\jars\libs\twitter4j-media-support-3.0.3.jar"
+        jar="/Users/macbook/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.4/695b63d702f505b9b916e02272e3b6381bade7f/gson-2.4.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="0695b63d702f505b9b916e02272e3b6381bade7f">
+        <dex dex="/Users/macbook/Desktop/Android Studio Repo Workspace/RCS-SA/hTCPromotorSMTools/build/intermediates/pre-dexed/debug/gson-2.4-ba54536f27c6f20f9258da62f267d030fe959f5b.jar" />
+    </item>
+    <item
+        jar="/Users/macbook/Desktop/Android Studio Repo Workspace/RCS-SA/hTCPromotorSMTools/build/intermediates/exploded-aar/RCS-SA/libraryBlasteringLibrary/unspecified/jars/libs/twitter4j-media-support-3.0.3.jar"
         jumboMode="false"
         revision="23.0.1"
         sha1="3e7ec610dee15e351443e0c033aa0cdce2fa8778">
-        <dex dex="D:\Workspace_Android_Github\RCS-SA\hTCPromotorSMTools\build\intermediates\pre-dexed\debug\twitter4j-media-support-3.0.3-51115e5d5cab757ca7fd58a2b11b943960d2a621.jar" />
+        <dex dex="/Users/macbook/Desktop/Android Studio Repo Workspace/RCS-SA/hTCPromotorSMTools/build/intermediates/pre-dexed/debug/twitter4j-media-support-3.0.3-3a801b5c31a28faa14c193673649dc5742382009.jar" />
     </item>
     <item
-        jar="D:\Workspace_Android_Github\RCS-SA\hTCPromotorSMTools\libs\core.jar"
+        jar="/Users/macbook/.gradle/caches/modules-2/files-2.1/com.squareup.picasso/picasso/2.5.2/7446d06ec8d4f7ffcc53f1da37c95f200dcb9387/picasso-2.5.2.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="/Users/macbook/Desktop/Android Studio Repo Workspace/RCS-SA/hTCPromotorSMTools/build/intermediates/pre-dexed/debug/picasso-2.5.2-a2405f3e12279626d570a53fb2c8e7778502def2.jar" />
+    </item>
+    <item
+        jar="/Users/macbook/Desktop/Android Studio Repo Workspace/RCS-SA/hTCPromotorSMTools/build/intermediates/exploded-aar/com.android.support/cardview-v7/23.1.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="5e412e954a24c5310a459c09870e4e2081aceb03">
+        <dex dex="/Users/macbook/Desktop/Android Studio Repo Workspace/RCS-SA/hTCPromotorSMTools/build/intermediates/pre-dexed/debug/classes-5c9f1a1190eaca8934a89ecad9c53761fe286ae1.jar" />
+    </item>
+    <item
+        jar="/Users/macbook/Desktop/Android Studio Repo Workspace/RCS-SA/hTCPromotorSMTools/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="6cbc7773921fcfedbe55657578f0cbfe614778dc">
+        <dex dex="/Users/macbook/Desktop/Android Studio Repo Workspace/RCS-SA/hTCPromotorSMTools/build/intermediates/pre-dexed/debug/classes-a754873dbf058c634d6a5dd520ca861b00a7d115.jar" />
+    </item>
+    <item
+        jar="/Users/macbook/Desktop/Android Studio Repo Workspace/RCS-SA/hTCPromotorSMTools/build/intermediates/exploded-aar/RCS-SA/libraryBlasteringLibrary/unspecified/jars/libs/signpost-core-1.2.1.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="d1b39a438178bc885d724458de64cee33f1932a6">
+        <dex dex="/Users/macbook/Desktop/Android Studio Repo Workspace/RCS-SA/hTCPromotorSMTools/build/intermediates/pre-dexed/debug/signpost-core-1.2.1.1-7236b10b819a029f084d07307d6214c9a3b2beea.jar" />
+    </item>
+    <item
+        jar="/Users/macbook/Desktop/Android Studio Repo Workspace/RCS-SA/hTCPromotorSMTools/build/intermediates/exploded-aar/RCS-SA/libraryAndroidQuickResponseCode/unspecified/jars/libs/core.jar"
         jumboMode="false"
         revision="23.0.1"
         sha1="69ab751723c7f7c8a01fddb1d169a93160fadca7">
-        <dex dex="D:\Workspace_Android_Github\RCS-SA\hTCPromotorSMTools\build\intermediates\pre-dexed\debug\core-c3c5c82f42f551a157c3b75aaefe600ecb82314a.jar" />
+        <dex dex="/Users/macbook/Desktop/Android Studio Repo Workspace/RCS-SA/hTCPromotorSMTools/build/intermediates/pre-dexed/debug/core-d3d3692a81626a191d874cd6440ab2bfbf949c59.jar" />
+    </item>
+    <item
+        jar="/Users/macbook/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit/retrofit/2.0.0-beta2/880d9e0997b2d1bfc98e0d121ced33ee5d04aac4/retrofit-2.0.0-beta2.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="880d9e0997b2d1bfc98e0d121ced33ee5d04aac4">
+        <dex dex="/Users/macbook/Desktop/Android Studio Repo Workspace/RCS-SA/hTCPromotorSMTools/build/intermediates/pre-dexed/debug/retrofit-2.0.0-beta2-d20fd9718d8b0a3c5faf3af7ec5dc67217e0bbac.jar" />
+    </item>
+    <item
+        jar="/Users/macbook/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit/converter-gson/2.0.0-beta2/392c3d09e0f5e7087544093cc0cb23bb9c7af5fa/converter-gson-2.0.0-beta2.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="392c3d09e0f5e7087544093cc0cb23bb9c7af5fa">
+        <dex dex="/Users/macbook/Desktop/Android Studio Repo Workspace/RCS-SA/hTCPromotorSMTools/build/intermediates/pre-dexed/debug/converter-gson-2.0.0-beta2-12ca4d4ecd832c3d7f797c2a3f7682c6dbf3bafa.jar" />
+    </item>
+    <item
+        jar="/Users/macbook/Desktop/Android Studio Repo Workspace/RCS-SA/hTCPromotorSMTools/build/intermediates/exploded-aar/RCS-SA/libraryBlasteringLibrary/unspecified/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="d5ce3495a44aa747253bf037520b8cd6811d3332">
+        <dex dex="/Users/macbook/Desktop/Android Studio Repo Workspace/RCS-SA/hTCPromotorSMTools/build/intermediates/pre-dexed/debug/classes-f07fc7db2bf801db1c1f044f56ef516d2cd67822.jar" />
+    </item>
+    <item
+        jar="/Users/macbook/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp/okhttp/2.7.2/20f6463eb19ac61960c5d91a094c2f4f0727dc2e/okhttp-2.7.2.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="20f6463eb19ac61960c5d91a094c2f4f0727dc2e">
+        <dex dex="/Users/macbook/Desktop/Android Studio Repo Workspace/RCS-SA/hTCPromotorSMTools/build/intermediates/pre-dexed/debug/okhttp-2.7.2-025662bb29bbf8b0cd548d20da70a834b7e6c3d2.jar" />
+    </item>
+    <item
+        jar="/Users/macbook/Desktop/Android Studio Repo Workspace/RCS-SA/hTCPromotorSMTools/build/intermediates/exploded-aar/RCS-SA/libraryBlasteringLibrary/unspecified/jars/libs/signpost-commonshttp4-1.2.1.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="576194c2d9ecf9382ed5ab913de8b36640507847">
+        <dex dex="/Users/macbook/Desktop/Android Studio Repo Workspace/RCS-SA/hTCPromotorSMTools/build/intermediates/pre-dexed/debug/signpost-commonshttp4-1.2.1.1-157d927a873315870f4c666e6555f1050ebe504f.jar" />
+    </item>
+    <item
+        jar="/Users/macbook/Desktop/Android Studio Repo Workspace/RCS-SA/hTCPromotorSMTools/build/intermediates/exploded-aar/RCS-SA/libraryAndroidQuickResponseCode/unspecified/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="61714ab7531b49241735b6e5b2f061bf6920b8c8">
+        <dex dex="/Users/macbook/Desktop/Android Studio Repo Workspace/RCS-SA/hTCPromotorSMTools/build/intermediates/pre-dexed/debug/classes-930ee41d418e92c2d90c2e75c3baff2bca237ad3.jar" />
+    </item>
+    <item
+        jar="/Users/macbook/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.6.0/98476622f10715998eacf9240d6b479f12c66143/okio-1.6.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="98476622f10715998eacf9240d6b479f12c66143">
+        <dex dex="/Users/macbook/Desktop/Android Studio Repo Workspace/RCS-SA/hTCPromotorSMTools/build/intermediates/pre-dexed/debug/okio-1.6.0-fce5e70c27a6bd11800e06589ffcde6174723a2c.jar" />
+    </item>
+    <item
+        jar="/Users/macbook/Desktop/Android Studio Repo Workspace/RCS-SA/hTCPromotorSMTools/libs/ion-2.0.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="01bfd0a773b3e6f55299bf495c817141eb1facb8">
+        <dex dex="/Users/macbook/Desktop/Android Studio Repo Workspace/RCS-SA/hTCPromotorSMTools/build/intermediates/pre-dexed/debug/ion-2.0.1-241ad3abb3c7dbfb475e9efd4d8e4f4d7c73903e.jar" />
+    </item>
+    <item
+        jar="/Users/macbook/Desktop/Android Studio Repo Workspace/RCS-SA/hTCPromotorSMTools/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.1.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="09c5e804bc67fc0580360043dff067df574a60d4">
+        <dex dex="/Users/macbook/Desktop/Android Studio Repo Workspace/RCS-SA/hTCPromotorSMTools/build/intermediates/pre-dexed/debug/classes-11eceead8ffd3b397ed445d75a8e40f3b60b86ad.jar" />
+    </item>
+    <item
+        jar="/Users/macbook/Desktop/Android Studio Repo Workspace/RCS-SA/hTCPromotorSMTools/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/jars/libs/internal_impl-23.1.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="a4de9c81ae239414e1ed0f86441b02abaf29bca9">
+        <dex dex="/Users/macbook/Desktop/Android Studio Repo Workspace/RCS-SA/hTCPromotorSMTools/build/intermediates/pre-dexed/debug/internal_impl-23.1.1-9e4cefc7e1e630fa571cd6ac253e030a16d94009.jar" />
+    </item>
+    <item
+        jar="/Users/macbook/Desktop/Android Studio Repo Workspace/RCS-SA/hTCPromotorSMTools/build/intermediates/exploded-aar/RCS-SA/libraryBlasteringLibrary/unspecified/jars/libs/twitter4j-core-3.0.3.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="fd32f6a458405bcdd77b68d0c6099a65203da009">
+        <dex dex="/Users/macbook/Desktop/Android Studio Repo Workspace/RCS-SA/hTCPromotorSMTools/build/intermediates/pre-dexed/debug/twitter4j-core-3.0.3-a96621809332a41e1f477e3e8c475662faac12b6.jar" />
     </item>
 
 </items>

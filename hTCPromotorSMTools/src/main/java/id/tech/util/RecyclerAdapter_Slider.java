@@ -7,9 +7,6 @@ import java.net.HttpURLConnection;
 
 import com.pkmmte.circularimageview.CircularImageView;
 import id.tech.htctools.R;
-import com.squareup.picasso.Picasso;
-import com.squareup.picasso.Target;
-import com.squareup.picasso.Picasso.LoadedFrom;
 
 import android.app.Activity;
 import android.content.Context;

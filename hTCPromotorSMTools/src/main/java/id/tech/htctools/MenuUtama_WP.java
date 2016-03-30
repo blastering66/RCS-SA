@@ -1,11 +1,17 @@
 package id.tech.htctools;
 
+import java.io.IOException;
 import java.util.ArrayList;
+import java.util.List;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
 
+import id.tech.adapters.Rest_Adapter;
 import id.tech.htctools.R;
+import id.tech.models.PojoProfile;
+import id.tech.models.PojoProfileTarget;
+import id.tech.models.PojoStockStore;
 import id.tech.util.GPSTracker;
 import id.tech.util.Parameter_Collections;
 import id.tech.util.RecyclerAdapter_MenuUtama;
@@ -14,6 +20,11 @@ import id.tech.util.RecyclerItemClickListener;
 import id.tech.util.RowData_Produk;
 import id.tech.util.ServiceHandlerJSON;
 import id.tech.util.SimpleDividerItemDecoration;
+import retrofit.Call;
+import retrofit.GsonConverterFactory;
+import retrofit.Response;
+import retrofit.Retrofit;
+
 import android.app.Activity;
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -78,8 +89,15 @@ public class MenuUtama_WP extends ActionBarActivity {
 
 
 		if (savedInstanceState == null) {
-			new AsyncTask_LoadProfile().execute();
 			currentState = savedInstanceState;
+			new AsyncTask_LoadProfile_Retrofit().execute();
+
+
+			FragmentManager fm = getSupportFragmentManager();
+			Fragment fragment = new Fragment_MenuUtama();
+			fm.beginTransaction().replace(R.id.frame_container, fragment)
+					.commit();
+
 		}
 
 	}
@@ -89,12 +107,178 @@ public class MenuUtama_WP extends ActionBarActivity {
 		// TODO Auto-generated method stub
 		super.onResume();
 		if (currentState == null) {
-			new AsyncTask_LoadProfile().execute();			 
+//			new AsyncTask_LoadProfile().execute();
+
 		}
+		new AsyncTask_LoadProfile_Retrofit().execute();
 
 		Drawer.openDrawer(Gravity.START);
 	}
-	
+
+	private class AsyncTask_LoadProfile_Retrofit extends AsyncTask<Void, Void, Void> {
+		DialogFragmentProgress pDialog;
+		String result, cCode, cNama_Pegawai, cUrl_ImgProfilePic, cTarget,
+				cAchievement;
+		int total_D_300, total_D_616, total_D_816, total_D_C, total_flyer,
+				total_O_820D, total_O_M7C, total_O_E8, total_O_M8, total_O_M9,
+				total_O_Max, total_O_Mini, total_O_V, total_WP,
+				total_WP_8X = 0;
+
+		boolean available_D_300, available_D_616, available_D_816,
+				available_D_C, available_flyer, available_O_820D,
+				available_O_M7C, available_O_E8, available_O_M8,
+				available_O_M9, available_O_Max, available_O_Mini,
+				available_O_V, available_WP, available_WP_8X = false;
+
+		@Override
+		protected void onPreExecute() {
+			super.onPreExecute();
+			Toast.makeText(getApplicationContext(), "Loading Data", Toast.LENGTH_SHORT).show();
+		}
+
+		@Override
+		protected Void doInBackground(Void... voids) {
+			Retrofit retrofit = new Retrofit.Builder().addConverterFactory(GsonConverterFactory.create())
+					.baseUrl(Parameter_Collections.URL_BASE).build();
+
+			Rest_Adapter adapter = retrofit.create(Rest_Adapter.class);
+			String id_pegawai = sp.getString(Parameter_Collections.SH_ID_PEGAWAI, "");
+
+			Call<PojoProfile> call = adapter.profile(id_pegawai);
+			try{
+
+				Response<PojoProfile> response = call.execute();
+
+				if(response.isSuccess()){
+					cCode = response.body().getJsonCode();
+
+					if (cCode.equals("1")) {
+						cNama_Pegawai = response.body().getData().getNamaPegawai();
+
+//						String img_no_data = response.body().getData().getImages();
+						List<PojoProfile.Image> imgnya= response.body().getData().getImages();
+
+						if(imgnya == null){
+							cUrl_ImgProfilePic = "";
+
+						}else{
+							cUrl_ImgProfilePic = Parameter_Collections.URL_GAMBAR_THUMB + imgnya.get(0).getNamaImage();
+						}
+
+
+					} else {
+
+					}
+
+				}
+
+				Call<PojoProfileTarget> call_target = adapter.profile_target(id_pegawai, "true");
+				Response<PojoProfileTarget> response_target = call_target.execute();
+				if(response_target.isSuccess()){
+					if(response_target.body().getJsonCode().equals("1")){
+						if(response_target.body().getData().size() > 0){
+							PojoProfileTarget.Datum datum= response_target.body().getData().get(0);
+
+							cTarget = datum.getJumlahTarget();
+							cAchievement = datum.getTotalPenjualan();
+						}
+					}
+				}
+
+				Call<PojoStockStore> call_stock = adapter.cek_stock(sp.getString(
+						Parameter_Collections.SH_KODE_TOKO, ""),"false");
+				Response<PojoStockStore> stockResponse = call_stock.execute();
+				if(stockResponse.isSuccess()){
+					if(stockResponse.body().getJsonCode().equals("1")){
+						if(stockResponse.body().getData().size()>0){
+							for(int i= 0;i < stockResponse.body().getData().size();i++ ){
+								String nama_produk = stockResponse.body().getData().get(i).getNamaProduk();
+								String status_produk = stockResponse.body().getData().get(i).getStatusProduk();
+								if (status_produk.equals("1")) {
+									if (nama_produk.contains(Parameter_Collections.TIPE_D_300)) {
+										available_D_300 = true;
+										total_D_300 += 1;
+									} else if (nama_produk.contains(Parameter_Collections.TIPE_D_616)) {
+										available_D_616 = true;
+										total_D_616 += 1;
+									} else if (nama_produk.contains(Parameter_Collections.TIPE_D_816)) {
+										available_D_816 = true;
+										total_D_816 += 1;
+									}else if (nama_produk.contains(Parameter_Collections.TIPE_D_C)) {
+										available_D_C = true;
+										total_D_C += 1;
+									}else if (nama_produk.contains(Parameter_Collections.TIPE_FLYER)) {
+										available_flyer = true;
+										total_flyer += 1;
+									}else if (nama_produk.contains(Parameter_Collections.TIPE_O_820D)) {
+										available_O_820D = true;
+										total_O_820D += 1;
+									}else if (nama_produk.contains(Parameter_Collections.TIPE_O_E8)) {
+										available_O_E8 = true;
+										total_O_E8 += 1;
+									}else if (nama_produk.contains(Parameter_Collections.TIPE_O_M7C)) {
+										available_O_M7C = true;
+										total_O_M7C += 1;
+									}else if (nama_produk.contains(Parameter_Collections.TIPE_O_M8)) {
+										available_O_M8 = true;
+										total_O_M8 += 1;
+									}else if (nama_produk.contains(Parameter_Collections.TIPE_O_M9)) {
+										available_O_M9 = true;
+										total_O_M9 += 1;
+									}else if (nama_produk.contains(Parameter_Collections.TIPE_O_Max)) {
+										available_O_Max = true;
+										total_O_Max += 1;
+									}else if (nama_produk.contains(Parameter_Collections.TIPE_O_Mini)) {
+										available_O_Mini = true;
+										total_O_Mini += 1;
+									}else if (nama_produk.contains(Parameter_Collections.TIPE_WP)) {
+										available_WP = true;
+										total_WP += 1;
+									}else if (nama_produk.contains(Parameter_Collections.TIPE_WP_8X)) {
+										available_WP_8X = true;
+										total_WP_8X += 1;
+									}
+
+
+								}
+							}
+
+						}
+					}
+				}
+
+				adapter_slider = new RecyclerAdapter_Slider(cNama_Pegawai,
+						cTarget, cAchievement, cUrl_ImgProfilePic,
+						available_D_300, total_D_300, available_D_616, total_D_616,
+						available_D_816, total_D_816, available_D_C, total_D_C,
+						available_flyer, total_flyer, available_O_820D, total_O_820D,
+						available_O_M7C, total_O_M7C, available_O_E8, total_O_E8,
+						available_O_M8, total_O_M8,available_O_M9, total_O_M9,
+						available_O_Max, total_O_Max, available_O_Mini, total_O_Mini, available_O_V, total_O_V,
+						available_WP, total_WP, available_WP_8X, total_WP_8X);
+
+			}catch (IOException e){
+
+			}
+
+
+			return null;
+		}
+
+		@Override
+		protected void onPostExecute(Void aVoid) {
+			super.onPostExecute(aVoid);
+
+			if(currentState == null){
+
+				layoutManager_slider = new LinearLayoutManager(getApplicationContext());
+				rv_slider.setLayoutManager(layoutManager_slider);
+				rv_slider.setAdapter(adapter_slider);
+				Drawer.openDrawer(Gravity.START);
+			}
+
+		}
+	}
 
 	private class AsyncTask_LoadProfile extends AsyncTask<Void, Void, Void> {
 		DialogFragmentProgress pDialog;

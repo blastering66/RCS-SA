@@ -10,7 +10,7 @@ import id.tech.util.GPSTracker;
 import id.tech.util.Parameter_Collections;
 import id.tech.util.SLite;
 
-import com.squareup.picasso.Picasso;
+import com.bumptech.glide.Glide;
 
 import android.support.v4.app.FragmentActivity;
 import android.support.v7.app.ActionBarActivity;
@@ -115,8 +115,7 @@ public class Splashscreen_Activity extends FragmentActivity {
 					tv_Retry.setVisibility(View.VISIBLE);
 					tv_Ok.setVisibility(View.VISIBLE);
 					
-					Picasso.with(getApplicationContext()).load(url)
-							.into(img_Loc);
+					Glide.with(getApplicationContext()).load(url).into(img_Loc);
 				}
 			}
 		});
@@ -144,8 +143,7 @@ public class Splashscreen_Activity extends FragmentActivity {
 					
 					img_Refresh.setVisibility(View.VISIBLE);
 					img_Ok.setVisibility(View.VISIBLE);
-					Picasso.with(getApplicationContext()).load(url)
-							.into(img_Loc);
+					Glide.with(getApplicationContext()).load(url).into(img_Loc);
 				}
 			}
 		});
@@ -301,8 +299,7 @@ public class Splashscreen_Activity extends FragmentActivity {
 					tv_GetLoc.setVisibility(View.GONE);
 					img_Refresh.setVisibility(View.VISIBLE);
 					img_Ok.setVisibility(View.VISIBLE);
-					Picasso.with(getApplicationContext()).load(url)
-							.into(img_Loc);
+					Glide.with(getApplicationContext()).load(url).into(img_Loc);
 				}
 			}else{
 				img_Logo.setVisibility(View.GONE);

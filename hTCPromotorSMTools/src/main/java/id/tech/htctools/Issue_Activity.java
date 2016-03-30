@@ -3,6 +3,7 @@ package id.tech.htctools;
 import java.io.DataOutputStream;
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.IOException;
 import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
@@ -13,11 +14,18 @@ import java.util.List;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import id.tech.adapters.Rest_Adapter;
 import id.tech.htctools.R;
+import id.tech.models.PojoResponseRowCount;
 import id.tech.util.CustomAdapter_Img;
 import id.tech.util.GPSTracker;
 import id.tech.util.Parameter_Collections;
 import id.tech.util.Public_Functions;
+import retrofit.Call;
+import retrofit.GsonConverterFactory;
+import retrofit.Response;
+import retrofit.Retrofit;
+
 import android.app.DatePickerDialog.OnDateSetListener;
 import android.app.ProgressDialog;
 import android.content.Context;
@@ -50,6 +58,9 @@ import android.widget.ImageView.ScaleType;
 import android.widget.LinearLayout.LayoutParams;
 import android.widget.ListView;
 import android.widget.Toast;
+
+import com.squareup.okhttp.MediaType;
+import com.squareup.okhttp.RequestBody;
 
 public class Issue_Activity extends ActionBarActivity {
 	Button btn, btn_TglMulai, btn_TglAkhir, btn_Submit;
@@ -204,7 +215,7 @@ public class Issue_Activity extends ActionBarActivity {
 				spf.edit().putString(Parameter_Collections.TAG_LATITUDE_NOW, String.valueOf(latitude)).commit();
 				
 				if(Public_Functions.isNetworkAvailable(getApplicationContext())){
-					new Async_SubmitIssue().execute();
+					new Async_SubmitIssue_Retrofit().execute();
 				}else {
 					Toast.makeText(getApplicationContext(),
 							"No Internet Connection, Cek Your Network",
@@ -215,7 +226,7 @@ public class Issue_Activity extends ActionBarActivity {
 			} else {
 				
 				if(Public_Functions.isNetworkAvailable(getApplicationContext())){
-					new Async_SubmitIssue().execute();
+					new Async_SubmitIssue_Retrofit().execute();
 				}else {
 					Toast.makeText(getApplicationContext(),
 							"No Internet Connection, Cek Your Network",
@@ -279,7 +290,110 @@ public class Issue_Activity extends ActionBarActivity {
 		Toast.makeText(getApplicationContext(), "Canceled. Images deleted", Toast.LENGTH_LONG).show();
 		finish();
 	}
-	
+
+	private class Async_SubmitIssue_Retrofit extends AsyncTask<Void, Void, Void>{ProgressDialog pdialog;
+		String respondMessage;
+		DialogFragmentProgress dialogProgress;
+		String cNamaToko, cNamaProgram, cBrand, cPesan,row_count,cMessage;
+		String url_file00, url_file01, url_file02, url_file03;
+		File sourceFile00, sourceFile01, sourceFile02, sourceFile03;
+		RequestBody body00,body01,body02,body03;
+
+		@Override
+		protected void onPreExecute() {
+			super.onPreExecute();
+			dialogProgress = new DialogFragmentProgress();
+			dialogProgress.show(getSupportFragmentManager(), "");
+
+			cNamaToko = ed_namaToko.getText().toString();
+			cNamaProgram = ed_namaProgram.getText().toString();
+			cBrand = ed_brand.getText().toString();
+			cPesan = ed_issue.getText().toString();
+			cTglAkhir = ed_tgl_akhir.getText().toString();
+			cTglMulai = ed_tgl_mulai.getText().toString();
+		}
+
+		@Override
+		protected Void doInBackground(Void... voids) {
+			if(mUrl_Img_00 != null){
+				sourceFile00 = new File(mUrl_Img_00);
+				body00 = RequestBody.create(MediaType.parse("image/*"), sourceFile00);
+			}
+			if(mUrl_Img_01 != null){
+				sourceFile01 = new File(mUrl_Img_01);
+				body01 = RequestBody.create(MediaType.parse("image/*"), sourceFile01);
+			}
+			if(mUrl_Img_02 != null){
+				sourceFile02 = new File(mUrl_Img_02);
+				body02 = RequestBody.create(MediaType.parse("image/*"), sourceFile02);
+			}if(mUrl_Img_03 != null){
+				sourceFile03 = new File(mUrl_Img_03);
+				body03 = RequestBody.create(MediaType.parse("image/*"), sourceFile03);
+			}
+
+			RequestBody cKindnya = RequestBody.create(MediaType.parse("text/plain"), Parameter_Collections.KIND_ISSUE);
+			RequestBody cNamaTokonya = RequestBody.create(MediaType.parse("text/plain"), cNamaToko);
+			RequestBody cIdPegawainya = RequestBody.create(MediaType.parse("text/plain"), id_pegawai);
+			RequestBody cNamaProgramNya = RequestBody.create(MediaType.parse("text/plain"), cNamaProgram);
+			RequestBody cBrandNya = RequestBody.create(MediaType.parse("text/plain"), cBrand);
+			RequestBody cTglMulaiNya = RequestBody.create(MediaType.parse("text/plain"), cTglMulai);
+			RequestBody cTglAkhirNya = RequestBody.create(MediaType.parse("text/plain"), cTglAkhir);
+			RequestBody cLatnya = RequestBody.create(MediaType.parse("text/plain"), spf.getString(Parameter_Collections.TAG_LATITUDE_NOW, "0"));
+			RequestBody cLonginya = RequestBody.create(MediaType.parse("text/plain"),  spf.getString(Parameter_Collections.TAG_LONGITUDE_NOW, "0"));
+			RequestBody cPesannya = RequestBody.create(MediaType.parse("text/plain"), cPesan);
+
+			Retrofit retrofit = new Retrofit.Builder().baseUrl(Parameter_Collections.URL_BASE).addConverterFactory(GsonConverterFactory.create())
+					.build();
+			Rest_Adapter adapter = retrofit.create(Rest_Adapter.class);
+			Call<PojoResponseRowCount> call = adapter.input_issue(cKindnya, cNamaTokonya, cIdPegawainya,
+					cNamaProgramNya,cBrandNya,cTglMulaiNya,cTglAkhirNya,cLatnya, cLonginya, cPesannya, body00, body01, body02, body03);
+
+			try{
+				Response<PojoResponseRowCount> response = call.execute();
+				if (response.isSuccess()) {
+					if (response.body().getJsonCode() == 1) {
+						row_count = "1";
+					} else {
+						row_count= "0";
+						cMessage = response.errorBody().toString();
+					}
+				} else {
+					row_count = "0";
+					cMessage = response.errorBody().toString();
+				}
+			}catch (IOException e){
+
+			}
+
+			return null;
+		}
+
+		@Override
+		protected void onPostExecute(Void aVoid) {
+			super.onPostExecute(aVoid);
+			if(row_count.equals("1")){
+				dialogProgress.dismiss();
+				DialogLocationConfirmation dialog = new DialogLocationConfirmation(
+						getApplicationContext(), "Input Issue Success", 9);
+				dialog.setCancelable(false);
+				dialog.show(getSupportFragmentManager(), "");
+
+//				Toast.makeText(getApplicationContext(), "Input Issue Success", Toast.LENGTH_LONG).show();
+//				finish();
+			}else{
+				dialogProgress.dismiss();
+
+				DialogLocationConfirmation dialog = new DialogLocationConfirmation(
+						getApplicationContext(), cMessage, 9);
+				dialog.setCancelable(false);
+				dialog.show(getSupportFragmentManager(), "");
+
+//				Toast.makeText(getApplicationContext(), result, Toast.LENGTH_LONG).show();
+//				finish();
+			}
+		}
+	}
+
 	private class Async_SubmitIssue extends AsyncTask<Void, Void, String>{
 		ProgressDialog pdialog;
 		String respondMessage;

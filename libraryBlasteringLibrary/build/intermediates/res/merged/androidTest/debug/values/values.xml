@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/libraryBlasteringLibrary/build/intermediates/bundles/debug/res/values/values.xml -->
+    <!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/RCS-SA/libraryBlasteringLibrary/build/intermediates/bundles/debug/res/values/values.xml -->
     <eat-comment/>
     <attr format="boolean" name="centered"/>
     <attr format="dimension|reference" name="childSize"/>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/libraryAppCompatCardview/build/intermediates/bundles/debug/res/values/values.xml -->
+    <!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/RCS-SA/libraryAppCompatCardview/build/intermediates/bundles/debug/res/values/values.xml -->
     <eat-comment/>
     <color name="cardview_dark_background">#FF202020</color>
     <color name="cardview_light_background">#FFFAFAFA</color>

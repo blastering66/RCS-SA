@@ -263,9 +263,7 @@ public class ServiceHandlerJSON {
 		try{
 			params = new ArrayList<NameValuePair>();
 			params.add(new BasicNameValuePair(Parameter_Collections.KIND, Parameter_Collections.KIND_NOTIF));			
-			
 			url = Parameter_Collections.URL_GET + URLEncodedUtils.format(params, Parameter_Collections.UTF);
-			
 			HttpGet hGet = new HttpGet(url);
 			hResponse = hClient.execute(hGet);
 			hEntity = hResponse.getEntity();

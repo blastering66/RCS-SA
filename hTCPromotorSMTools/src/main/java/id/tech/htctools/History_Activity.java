@@ -1,22 +1,11 @@
 package id.tech.htctools;
 
-import id.tech.htctools.R;
-import id.tech.util.Public_Functions;
 import common.activities.SampleActivityBase;
-import android.content.Intent;
+
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.ActionBar;
-import android.support.v7.app.ActionBar.Tab;
-import android.support.v7.app.ActionBarActivity;
-import android.view.LayoutInflater;
 import android.view.MenuItem;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.TabHost;
-import android.widget.TextView;
-import android.widget.Toast;
 
 public class History_Activity extends SampleActivityBase{
 	@Override
@@ -31,7 +20,7 @@ public class History_Activity extends SampleActivityBase{
 		
 		FragmentTransaction t = getSupportFragmentManager().beginTransaction();
 //		TestSlidingFragment fragment = new TestSlidingFragment();
-		SlidingTabsFragment fragment = new SlidingTabsFragment();
+		HistorySlidingTabsFragment fragment = new HistorySlidingTabsFragment();
 		t.replace(R.id.sample_content_fragment	, fragment);
 		t.commit();
 	}

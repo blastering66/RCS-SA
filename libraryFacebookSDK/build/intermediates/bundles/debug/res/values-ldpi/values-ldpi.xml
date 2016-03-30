@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/D:/Workspace_Android_Github/RCS-SA/libraryFacebookSDK/src/main/res/values-ldpi/dimens.xml -->
+    <!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/RCS-SA/libraryFacebookSDK/src/main/res/values-ldpi/dimens.xml -->
     <eat-comment/>
     <dimen name="com_facebook_picker_divider_width">1px</dimen>
 </resources>

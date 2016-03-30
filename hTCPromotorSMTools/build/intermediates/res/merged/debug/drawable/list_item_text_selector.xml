@@ -7,4 +7,4 @@
            android:color="#000000" /> <!-- focused -->
      <item android:color="#000000" /> <!-- default -->
 
-</selector><!-- From: file:/D:/Workspace_Android_Github/RCS-SA/libraryBlasteringLibrary/src/main/res/drawable/list_item_text_selector.xml --><!-- From: file:/D:/Workspace_Android_Github/RCS-SA/hTCPromotorSMTools/build/intermediates/exploded-aar/RCS-SA/libraryBlasteringLibrary/unspecified/res/drawable/list_item_text_selector.xml -->
+</selector><!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/RCS-SA/libraryBlasteringLibrary/src/main/res/drawable/list_item_text_selector.xml --><!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/RCS-SA/hTCPromotorSMTools/build/intermediates/exploded-aar/RCS-SA/libraryBlasteringLibrary/unspecified/res/drawable/list_item_text_selector.xml -->

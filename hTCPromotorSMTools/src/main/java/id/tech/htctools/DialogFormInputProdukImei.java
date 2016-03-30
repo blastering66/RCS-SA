@@ -3,6 +3,7 @@ package id.tech.htctools;
 import java.io.DataOutputStream;
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.IOException;
 import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
@@ -11,9 +12,16 @@ import java.net.URL;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import id.tech.adapters.Rest_Adapter;
 import id.tech.htctools.R;
+import id.tech.models.PojoResponseRowCount;
 import id.tech.util.Parameter_Collections;
 import id.tech.util.ServiceHandlerJSON;
+import retrofit.Call;
+import retrofit.GsonConverterFactory;
+import retrofit.Response;
+import retrofit.Retrofit;
+
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -28,6 +36,10 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.Toast;
+
+import com.squareup.okhttp.MediaType;
+import com.squareup.okhttp.RequestBody;
 
 public class DialogFormInputProdukImei extends FragmentActivity {
 	Button btn, btn_submit;
@@ -81,8 +93,12 @@ public class DialogFormInputProdukImei extends FragmentActivity {
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-				
-				new Async_InputProduk().execute();
+				if(mUrl_Img_00 == null || mUrl_Img_00.equals("")){
+					Toast.makeText(getApplicationContext(),"Input Foto Terlebih Dahulu", Toast.LENGTH_LONG).show();
+				}else{
+					new Async_InputProduk_Retrofit().execute();
+				}
+
 			}
 		});
 	}
@@ -106,13 +122,108 @@ public class DialogFormInputProdukImei extends FragmentActivity {
 
 	}
 
-	private class Async_InputProduk extends AsyncTask<Void, Void, String> {
+	private class Async_InputProduk_Retrofit extends AsyncTask<Void, Void, String> {
 		DialogFragmentProgress pDialog;
+		String cImei,row_count, error_message="";
+
+		@Override
+		protected void onPreExecute() {
+			super.onPreExecute();
+			pDialog = new DialogFragmentProgress();
+			pDialog.show(getSupportFragmentManager(), "");
+
+			cImei = ed_Imei.getText().toString();
+		}
+
+		@Override
+		protected String doInBackground(Void... voids) {
+			Retrofit retrofit = new Retrofit.Builder().addConverterFactory(GsonConverterFactory.create())
+					.baseUrl(Parameter_Collections.URL_BASE).build();
+
+			RequestBody imgBody = RequestBody.create(MediaType.parse("image/*"), new File(mUrl_Img_00));
+			RequestBody cKind = RequestBody.create(MediaType.parse("text/plain"), Parameter_Collections.KIND_INSERT_PRODUKTOKO);
+			RequestBody cId_pegawai = RequestBody.create(MediaType.parse("text/plain"), id_pegawai);
+			RequestBody cKodeToko = RequestBody.create(MediaType.parse("text/plain"), kode_toko);
+			RequestBody cLat = RequestBody.create(MediaType.parse("text/plain"), spf.getString(
+					Parameter_Collections.TAG_LATITUDE_NOW, ""));
+			RequestBody cLong = RequestBody.create(MediaType.parse("text/plain"), spf.getString(
+					Parameter_Collections.TAG_LONGITUDE_NOW, ""));
+			RequestBody cImeiBody = RequestBody.create(MediaType.parse("text/plain"), cImei);
+
+			Rest_Adapter adapter = retrofit.create(Rest_Adapter.class);
+			Call<PojoResponseRowCount> call = adapter.input_produk(cKind,
+					cId_pegawai, cKodeToko, cLat, cLong, cImeiBody, imgBody);
+			try{
+				Response<PojoResponseRowCount> response = call.execute();
+
+				if(response.isSuccess()){
+					if(response.body().getJsonCode() == 1){
+						row_count = response.body().getRowCount().toString();
+					}else{
+						row_count = "0";
+					}
+				}else{
+					row_count = "0";
+				}
+			}catch (IOException e){
+				row_count = "0";
+			}
+			return null;
+		}
+
+		@Override
+		protected void onPostExecute(String s) {
+			super.onPostExecute(s);
+
+			if (row_count.equals("1")) {
+
+				DialogLocationConfirmation dialog = new DialogLocationConfirmation(
+						getApplicationContext(), "Input Stok Sukses", 9);
+				dialog.setCancelable(false);
+				dialog.show(getSupportFragmentManager(), "");
+
+				// Toast.makeText(getApplicationContext(), result,
+				// Toast.LENGTH_LONG).show();
+				// Toast.makeText(getApplicationContext(), "Input Stok Sukses",
+				// Toast.LENGTH_LONG).show();
+				// finish();
+			} else if (error_message.equals("produk tidak ada di database")) {
+
+				Intent load = new Intent(getApplicationContext(),
+						DialogFormInputProduk.class);
+				load.putExtra("ada_di_db", true);
+				// load.putExtra("ada_di_db", false);
+				startActivity(load);
+				finish();
+
+			} else if (error_message
+					.equals("produk tidak ada di dalam stok toko")) {
+				Intent load = new Intent(getApplicationContext(),
+						DialogFormInputProduk.class);
+				load.putExtra("ada_di_db", false);
+				startActivity(load);
+				finish();
+			} else if (error_message.equals("produk sudah ada di data stok")) {
+
+				DialogLocationConfirmation dialog = new DialogLocationConfirmation(
+						getApplicationContext(), "Produk sudah ada di Stok", 9);
+				dialog.setCancelable(false);
+				dialog.show(getSupportFragmentManager(), "");
+
+				// Toast.makeText(getApplicationContext(), "",
+				// Toast.LENGTH_LONG).show();
+				// finish();
+			}
+		}
+	}
+
+	private class Async_InputProduk extends AsyncTask<Void, Void, String> {
 		String cCode, cMessage;
 		String cImei;
 
 		String respondMessage;
 		JSONObject jsonResult;
+		DialogFragmentProgress pDialog;
 		String row_count, error_message;
 		// Editted 26 Jan 2016 by Ridho etelah migrasi hosting
 		String stringJSONResult;

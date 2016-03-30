@@ -58,10 +58,19 @@ import com.jwetherell.quick_response_code.ViewfinderView;
 import com.jwetherell.quick_response_code.camera.CameraManager;
 import com.jwetherell.quick_response_code.result.ResultHandler;
 import com.jwetherell.quick_response_code.result.ResultHandlerFactory;
+
+import id.tech.adapters.Rest_Adapter;
 import id.tech.htctools.R;
+import id.tech.models.PojoResponseRowCount;
 import id.tech.util.Parameter_Collections;
 import id.tech.util.Public_Functions;
 import id.tech.util.ServiceHandlerJSON;
+import okhttp3.OkHttpClient;
+import okhttp3.logging.HttpLoggingInterceptor;
+import retrofit.Call;
+import retrofit.GsonConverterFactory;
+import retrofit.Response;
+import retrofit.Retrofit;
 
 public class ScanAbsen_Activity extends FragmentActivity implements
 		IDecoderActivity, SurfaceHolder.Callback {
@@ -234,13 +243,86 @@ public class ScanAbsen_Activity extends FragmentActivity implements
 		if (Public_Functions.isNetworkAvailable(getApplicationContext())) {
 //		boolean b = true;
 //		if (b) {
-			new Async_SubmitAbsen().execute();
+			new Async_SubmitAbsen_Retrofit().execute();
 		}else {
 			Toast.makeText(getApplicationContext(),
 					"No Internet Connection. Cek Your Network, and Try Again",
 					Toast.LENGTH_LONG).show();
 		}
 		
+	}
+
+	private class Async_SubmitAbsen_Retrofit extends AsyncTask<Void, Void, Void> {
+		ProgressDialog pdialog;
+		DialogFragmentProgress pDialog;
+		String c;
+
+		@Override
+		protected void onPreExecute() {
+			super.onPreExecute();
+			pDialog = new DialogFragmentProgress();
+			pDialog.show(getSupportFragmentManager(), "");
+		}
+
+		@Override
+		protected Void doInBackground(Void... voids) {
+			String latitude = sh_pf.getString(Parameter_Collections.TAG_LATITUDE_NOW, "0.0");
+			String longitude = sh_pf.getString(Parameter_Collections.TAG_LONGITUDE_NOW, "0.0");
+			try {
+				OkHttpClient client = new OkHttpClient();
+				Retrofit retrofit = new Retrofit.Builder().addConverterFactory(GsonConverterFactory.create())
+						.baseUrl(Parameter_Collections.URL_BASE).build();
+
+				Rest_Adapter adapter = retrofit.create(Rest_Adapter.class);
+				Call<PojoResponseRowCount> call = adapter.absent(Parameter_Collections.KIND_ABSEN,code, extra_id_pegawai, longitude, latitude,
+						extra_kode_absensi);
+
+				Response<PojoResponseRowCount> response = call.execute();
+
+				if(response.isSuccess()){
+					c = response.body().getJsonCode().toString();
+					sh_pf.edit()
+							.putString(Parameter_Collections.SH_KODE_TOKO, code)
+							.commit();
+					if (extra_kode_absensi.equals("1")) {
+						sh_pf.edit()
+								.putBoolean(Parameter_Collections.SH_ABSENTED, true)
+								.commit();
+					} else {
+						sh_pf.edit()
+								.putBoolean(Parameter_Collections.SH_ABSENTED,
+										false).commit();
+					}
+				}else{
+						c = "0";
+				}
+
+
+
+			}catch(IOException e){
+				c = "0";
+			} catch (Exception e) {
+				c = "0";
+			}
+
+			return null;
+		}
+
+		@Override
+		protected void onPostExecute(Void aVoid) {
+			super.onPostExecute(aVoid);
+			if (c.equals("1")) {
+				pDialog.dismiss();
+				DialogLocationConfirmation dialog = new DialogLocationConfirmation(getApplicationContext(), "Absent Success", 9);
+				dialog.setCancelable(false);
+				dialog.show(getSupportFragmentManager(), "");
+
+			} else {
+				Toast.makeText(getApplicationContext(),
+						"Something wrong happened", Toast.LENGTH_LONG).show();
+				finish();
+			}
+		}
 	}
 
 	private class Async_SubmitAbsen extends AsyncTask<Void, Void, Void> {

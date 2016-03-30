@@ -23,4 +23,4 @@
     android:focusable="false"
     android:clickable="false"
     android:button="@drawable/com_facebook_button_check" />
-<!-- From: file:/D:/Workspace_Android_Github/RCS-SA/libraryFacebookSDK/src/main/res/layout/com_facebook_picker_checkbox.xml -->
+<!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/RCS-SA/libraryFacebookSDK/src/main/res/layout/com_facebook_picker_checkbox.xml -->

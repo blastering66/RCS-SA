@@ -1,6 +1,7 @@
 package id.tech.util;
 
 public class Parameter_Collections {
+	public static String URL_BASE = "http://www.rcs-indonesia.com/htc/api/";
 
 	public static String FROM_SURAT = "from_surat";
 	public static String TAG_VIEW_IMG = "img_ayat";

@@ -20,4 +20,4 @@
         android:layout_below="@id/img_content"
         android:background="#fff"/>
 
-</RelativeLayout><!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/libraryBlasteringLibrary/src/main/res/layout/cell_stgv.xml --><!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/libraryBlasteringLibrary/build/intermediates/bundles/debug/res/layout/cell_stgv.xml -->
+</RelativeLayout><!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/RCS-SA/libraryBlasteringLibrary/src/main/res/layout/cell_stgv.xml --><!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/RCS-SA/libraryBlasteringLibrary/build/intermediates/bundles/debug/res/layout/cell_stgv.xml -->

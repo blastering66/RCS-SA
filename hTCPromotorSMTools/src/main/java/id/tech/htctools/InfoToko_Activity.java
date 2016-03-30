@@ -6,11 +6,17 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import id.tech.adapters.Rest_Adapter;
 import id.tech.htctools.R;
+import id.tech.models.PojoInfoToko;
+import id.tech.models.PojoResponseRowCount;
 import id.tech.util.Parameter_Collections;
 import id.tech.util.RowData_InfoToko;
 import id.tech.util.ServiceHandlerJSON;
 
+import com.bumptech.glide.Glide;
+import com.squareup.okhttp.MediaType;
+import com.squareup.okhttp.RequestBody;
 import com.squareup.picasso.Picasso;
 import com.viewpagerindicator.CirclePageIndicator;
 
@@ -41,6 +47,10 @@ import android.widget.LinearLayout;
 import android.widget.ImageView.ScaleType;
 import android.widget.Toast;
 import common.activities.SampleActivityBase;
+import retrofit.Call;
+import retrofit.GsonConverterFactory;
+import retrofit.Response;
+import retrofit.Retrofit;
 
 public class InfoToko_Activity extends SampleActivityBase {
 	SharedPreferences spf;
@@ -185,18 +195,42 @@ public class InfoToko_Activity extends SampleActivityBase {
 		protected Void doInBackground(Void... params) {
 			// TODO Auto-generated method stub
 			try{
-				ServiceHandlerJSON sh = new ServiceHandlerJSON();
-				JSONObject jobj = sh.json_update_tokoinfo(id_toko, cAlamat, cDesc, cArea, cTlp, cKota);
-				
-				cCode = jobj.getString(Parameter_Collections.TAG_JSON_CODE);
-				
-				if(!cCode.equals("1")){
-					cMessage = "Something Wrong";
+				Retrofit retrofit = new Retrofit.Builder().addConverterFactory(GsonConverterFactory.create())
+						.baseUrl(Parameter_Collections.URL_BASE).build();
+				Rest_Adapter  adapter = retrofit.create(Rest_Adapter.class);
+				Call<PojoResponseRowCount> call = adapter.update_infotoko("data_toko", id_toko, cAlamat, cDesc,
+						cArea, cTlp, cKota);
+//				RequestBody cKindnya = RequestBody.create(MediaType.parse("text/plain"), "data_toko");
+//				RequestBody cIdTokonya = RequestBody.create(MediaType.parse("text/plain"), id_toko);
+//				RequestBody cAlamatnya = RequestBody.create(MediaType.parse("text/plain"), cAlamat);
+//				RequestBody cDescnya = RequestBody.create(MediaType.parse("text/plain"), cDesc);
+//				RequestBody cAreanya = RequestBody.create(MediaType.parse("text/plain"), cArea);
+//				RequestBody cTlpnya = RequestBody.create(MediaType.parse("text/plain"), cTlp);
+//				RequestBody cKotanya = RequestBody.create(MediaType.parse("text/plain"), cKota);
+//				Call<PojoResponseRowCount> call = adapter.update_infotoko(cKindnya,cIdTokonya , cAlamatnya, cDescnya,
+//						cAreanya, cTlpnya, cKotanya);
+
+				Response<PojoResponseRowCount> response = call.execute();
+				if(response.isSuccess()){
+					if(response.body().getJsonCode() == 1){
+						cCode = "1";
+					}else{
+						cCode = "0";
+						cMessage = response.errorBody().toString();
+					}
+				}else{
+					cCode = "0";
+					cMessage = response.errorBody().toString();
 				}
-//			}catch(JSONException e){
-				
+//				ServiceHandlerJSON sh = new ServiceHandlerJSON();
+//				JSONObject jobj = sh.json_update_tokoinfo(id_toko, cAlamat, cDesc, cArea, cTlp, cKota);
+//				cCode = jobj.getString(Parameter_Collections.TAG_JSON_CODE);
+//				if(!cCode.equals("1")){
+//					cMessage = "Something Wrong";
+//				}
 			}catch(Exception e){
-				
+				cCode = "0";
+				cMessage = "Terjadi Kesalahan pada Server";
 			}
 			return null;
 		}
@@ -210,7 +244,7 @@ public class InfoToko_Activity extends SampleActivityBase {
 				Toast.makeText(getApplicationContext(), "Edit Data Success", Toast.LENGTH_LONG).show();
 				finish();
 			}else{
-				Toast.makeText(getApplicationContext(), "Edit Data Failed", Toast.LENGTH_LONG).show();
+				Toast.makeText(getApplicationContext(), "Edit Data Failed, Message : " + cMessage, Toast.LENGTH_LONG).show();
 			}
 		}
 		
@@ -235,44 +269,73 @@ public class InfoToko_Activity extends SampleActivityBase {
 		protected Void doInBackground(Void... params) {
 			// TODO Auto-generated method stub
 			try{
-				ServiceHandlerJSON sh = new ServiceHandlerJSON();
-				JSONObject jobj = sh.json_get_tokoinfo(kode_toko);
-				
-				cCode = jobj.getString(Parameter_Collections.TAG_JSON_CODE);
-				
-				if(cCode.equals("1")){
-					JSONObject c = jobj
-							.getJSONObject(Parameter_Collections.TAG_DATA);
-					
-					String id_Toko = c.getString(Parameter_Collections.TAG_ID_TOKO);
-					
-					id_toko = id_Toko;
-					
-					String nama_Toko = c.getString(Parameter_Collections.TAG_NAMA_TOKO);
-					String alamat_Toko = c.getString(Parameter_Collections.TAG_ALAMAT_TOKO);
-					String desc_Toko = c.getString(Parameter_Collections.TAG_DESC_TOKO);
-					String area_Toko = c.getString(Parameter_Collections.TAG_AREA_TOKO);
-					String tlp_Toko = c.getString(Parameter_Collections.TAG_TLP_TOKO);
-					String kota_Toko = c.getString(Parameter_Collections.TAG_KOTA_TOKO);
-					
-					datanya.add(new RowData_InfoToko(id_Toko, nama_Toko, alamat_Toko, tlp_Toko, 
-							kode_toko, area_Toko, desc_Toko, kota_Toko));
-					
-					JSONArray jArray2 = c
-							.getJSONArray(Parameter_Collections.TAG_ARRAY_IMAGES);
+				Retrofit retrofit = new Retrofit.Builder().addConverterFactory(GsonConverterFactory.create())
+						.baseUrl(Parameter_Collections.URL_BASE).build();
+				Rest_Adapter adapter = retrofit.create(Rest_Adapter.class);
+				Call<PojoInfoToko> call = adapter.info_toko(kode_toko);
 
-					if(jArray2.length() > 0){
-						for(int i=0; i<jArray2.length(); i++){
-							JSONObject z = jArray2.getJSONObject(i);
-							String url = z.getString(Parameter_Collections.TAG_NAMA_IMAGE);
-							url_img_gallery.add(Parameter_Collections.URL_GAMBAR + url);
+				Response<PojoInfoToko> response = call.execute();
+				if(response.isSuccess()){
+					if(response.body().getJsonCode().equals("1")){
+						id_toko = response.body().getData().getIdToko();
+						String nama_Toko = response.body().getData().getNamaToko();
+						String alamat_Toko = response.body().getData().getAlamatToko();
+						String desc_Toko = response.body().getData().getTeleponToko();
+						String area_Toko  = response.body().getData().getEmailToko();
+						String tlp_Toko = response.body().getData().getTlp();
+						String kota_Toko = response.body().getData().getKota();
+
+						datanya.add(new RowData_InfoToko(id_toko, nama_Toko, alamat_Toko, tlp_Toko,
+								kode_toko, area_Toko, desc_Toko, kota_Toko));
+
+						for(int i=0; i < response.body().getData().getImages().size(); i++){
+							url_img_gallery.add(Parameter_Collections.URL_GAMBAR_THUMB +
+									response.body().getData().getImages().get(i).getNamaImage());
 						}
+
+
+						cCode = "1";
 					}
-					
-					
+				}else{
+					cCode = "0";
 				}
+
+//				ServiceHandlerJSON sh = new ServiceHandlerJSON();
+//				JSONObject jobj = sh.json_get_tokoinfo(kode_toko);
+//				cCode = jobj.getString(Parameter_Collections.TAG_JSON_CODE);
+//				if(cCode.equals("1")){
+//					JSONObject c = jobj
+//							.getJSONObject(Parameter_Collections.TAG_DATA);
+//
+//					String id_Toko = c.getString(Parameter_Collections.TAG_ID_TOKO);
+//
+//					id_toko = id_Toko;
+//
+//					String nama_Toko = c.getString(Parameter_Collections.TAG_NAMA_TOKO);
+//					String alamat_Toko = c.getString(Parameter_Collections.TAG_ALAMAT_TOKO);
+//					String desc_Toko = c.getString(Parameter_Collections.TAG_DESC_TOKO);
+//					String area_Toko = c.getString(Parameter_Collections.TAG_AREA_TOKO);
+//					String tlp_Toko = c.getString(Parameter_Collections.TAG_TLP_TOKO);
+//					String kota_Toko = c.getString(Parameter_Collections.TAG_KOTA_TOKO);
+//
+//					datanya.add(new RowData_InfoToko(id_Toko, nama_Toko, alamat_Toko, tlp_Toko,
+//							kode_toko, area_Toko, desc_Toko, kota_Toko));
+//
+//					JSONArray jArray2 = c
+//							.getJSONArray(Parameter_Collections.TAG_ARRAY_IMAGES);
+//
+//					if(jArray2.length() > 0){
+//						for(int i=0; i<jArray2.length(); i++){
+//							JSONObject z = jArray2.getJSONObject(i);
+//							String url = z.getString(Parameter_Collections.TAG_NAMA_IMAGE);
+//							url_img_gallery.add(Parameter_Collections.URL_GAMBAR + url);
+//						}
+//					}
+//
+//
+//				}
 			}catch(Exception e){
-				
+				cCode = "0";
 			}
 			return null;
 		}
@@ -293,7 +356,6 @@ public class InfoToko_Activity extends SampleActivityBase {
 				
 				viewpager.setAdapter(new MyVPAdapter(getSupportFragmentManager()));
 				indicator.setViewPager(viewpager);
-
 				OnPageChangeListener pageChangeListener = new ViewPager.SimpleOnPageChangeListener();
 				indicator.setOnPageChangeListener(pageChangeListener);
 			}
@@ -322,7 +384,7 @@ public class InfoToko_Activity extends SampleActivityBase {
 
 	}
 
-	private static class VPGallery extends Fragment {
+	public static class VPGallery extends Fragment {
 		static String ARG_PAGE = "page";
 		static String ARG_ARRAY = "array";
 
@@ -351,9 +413,7 @@ public class InfoToko_Activity extends SampleActivityBase {
 			img.setScaleType(ScaleType.CENTER_CROP);
 			img.setLayoutParams(params);
 
-			
-			
-			Picasso.with(getActivity()).load(url.get(posisi)).into(img);
+			Glide.with(getActivity()).load(url.get(posisi)).into(img);
 			
 			return img;
 		}

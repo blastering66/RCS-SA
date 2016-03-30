@@ -87,8 +87,8 @@ public final class R {
 		public static final int result_text = 0x7f06004c;
 		public static final int result_uri = 0x7f06004d;
 		public static final int result_wifi = 0x7f06004e;
-		public static final int wifi_changing_network = 0x7f06008e;
-		public static final int wifi_ssid_label = 0x7f06008f;
-		public static final int wifi_type_label = 0x7f060090;
+		public static final int wifi_changing_network = 0x7f06008f;
+		public static final int wifi_ssid_label = 0x7f060090;
+		public static final int wifi_type_label = 0x7f060091;
 	}
 }

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/libraryFacebookSDK/build/intermediates/bundles/debug/res/values-xhdpi/values-xhdpi.xml -->
+    <!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/RCS-SA/libraryFacebookSDK/build/intermediates/bundles/debug/res/values-xhdpi/values-xhdpi.xml -->
     <eat-comment/>
     <dimen name="com_facebook_picker_divider_width">2px</dimen>
 </resources>

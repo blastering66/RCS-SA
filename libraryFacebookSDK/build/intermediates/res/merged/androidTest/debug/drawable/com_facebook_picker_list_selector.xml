@@ -25,4 +25,4 @@
     <item android:state_focused="true"                                                             android:drawable="@drawable/com_facebook_picker_list_focused" />
 
 </selector>
-<!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/libraryFacebookSDK/src/main/res/drawable/com_facebook_picker_list_selector.xml --><!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/libraryFacebookSDK/build/intermediates/bundles/debug/res/drawable/com_facebook_picker_list_selector.xml -->
+<!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/RCS-SA/libraryFacebookSDK/src/main/res/drawable/com_facebook_picker_list_selector.xml --><!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/RCS-SA/libraryFacebookSDK/build/intermediates/bundles/debug/res/drawable/com_facebook_picker_list_selector.xml -->

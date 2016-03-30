@@ -18,4 +18,4 @@
   <item android:state_checked="true" android:drawable="@drawable/com_facebook_button_check_on" />
   <item android:drawable="@drawable/com_facebook_button_check_off" />
 </selector>
-<!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/libraryFacebookSDK/src/main/res/drawable/com_facebook_button_check.xml --><!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/libraryFacebookSDK/build/intermediates/bundles/debug/res/drawable/com_facebook_button_check.xml -->
+<!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/RCS-SA/libraryFacebookSDK/src/main/res/drawable/com_facebook_button_check.xml --><!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/RCS-SA/libraryFacebookSDK/build/intermediates/bundles/debug/res/drawable/com_facebook_button_check.xml -->

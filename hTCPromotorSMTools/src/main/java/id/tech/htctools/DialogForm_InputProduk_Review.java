@@ -38,26 +38,38 @@ public class DialogForm_InputProduk_Review extends FragmentActivity {
 	SharedPreferences spf;
 
 	AutoCompleteTextView auto_namaProduk, auto_warnaProduk,
-			auto_keteranganProduk;
+			auto_keteranganProduk,ed_Others;
+
+	String cSn,cImei1,cImei2,cEsn,nama_produk, cWarnaProduk, cKeterangan, cKodeToko,cIdPegawai,
+			cLongitude, cLatitude;
 
 	@Override
 	protected void onCreate(Bundle arg0) {
 		// TODO Auto-generated method stub
 		super.onCreate(arg0);
-		setContentView(R.layout.layout_dialog_input_produk);
+		setContentView(R.layout.layout_dialog_input_produk_review);
 
 		spf = getSharedPreferences(Parameter_Collections.SH_NAME,
 				Context.MODE_PRIVATE);
 		ada_di_db = getIntent().getBooleanExtra("ada_di_db", false);
 
-		getALlView();
+		cSn = getIntent().getStringExtra("cSn");
+		cImei1 = getIntent().getStringExtra("cImei1");
+		cImei2 = getIntent().getStringExtra("cImei2");
+		cEsn = getIntent().getStringExtra("cEsn");
+		nama_produk = getIntent().getStringExtra("nama_produk");
+		cWarnaProduk = getIntent().getStringExtra("cWarnaProduk");
+		cKeterangan = getIntent().getStringExtra("cKeterangan");
+		cKodeToko = getIntent().getStringExtra("cKodeToko");
+		cIdPegawai = getIntent().getStringExtra("cIdPegawai");
+		cLongitude = getIntent().getStringExtra("cLongitude");
+		cLatitude = getIntent().getStringExtra("cLatitude");
 
+		getALlView();
 	}
 
 	private class Async_SubmitProduk extends AsyncTask<Void, Void, Void> {
-		private String cSn, cImei1, cImei2, cEsn, cWarnaProduk,
-				cKeterangan;
-		private String cKodeToko, cIdPegawai, cLongitude, cLatitude, nama_produk;
+
 		private String row_count, json_code, error_message;
 		DialogFragmentProgress dialogProgress;
 
@@ -73,14 +85,6 @@ public class DialogForm_InputProduk_Review extends FragmentActivity {
 			cImei2 = ed_Imei2.getText().toString();
 			cEsn = ed_Esn.getText().toString();
 
-			// cNamaProduk = auto_namaProduk.getText().toString();
-			if(wrapper_Others.getVisibility() == View.VISIBLE){
-				nama_produk = ed_Others.getText().toString();
-			}else{
-				nama_produk = spinner_TipeProduk.getSelectedItem().toString();
-			}
-
-
 			cWarnaProduk = auto_warnaProduk.getText().toString();
 			cKeterangan = auto_keteranganProduk.getText().toString();
 
@@ -89,25 +93,27 @@ public class DialogForm_InputProduk_Review extends FragmentActivity {
 			}else{
 				cKodeToko = spf.getString(Parameter_Collections.SH_KODE_TOKO, "");
 			}
-			
+
 			cIdPegawai = spf.getString(Parameter_Collections.SH_ID_PEGAWAI, "");
 			// cLongitude = "106.8151608";
 			// cLatitude = "-6.3025544";
 			cLongitude = spf.getString(Parameter_Collections.TAG_LONGITUDE_NOW,
-					"106.8151608");
+					"0.0");
 			cLatitude = spf.getString(Parameter_Collections.TAG_LATITUDE_NOW,
-					"-6.3025544");
+					"0.0");
 
-			
+
 		}
 
 		@Override
 		protected Void doInBackground(Void... params) {
 			// TODO Auto-generated method stub
-			ServiceHandlerJSON sh = new ServiceHandlerJSON();
-			JSONObject jObj = sh.json_input_produk(cSn, cImei1, cImei2, cEsn,
-					nama_produk, cWarnaProduk, cKeterangan, cKodeToko,
-					cIdPegawai, cLongitude, cLatitude);
+//			ServiceHandlerJSON sh = new ServiceHandlerJSON();
+//			JSONObject jObj = sh.json_input_produk(cSn, cImei1, cImei2, cEsn,
+//					nama_produk, cWarnaProduk, cKeterangan, cKodeToko,
+//					cIdPegawai, cLongitude, cLatitude);
+			JSONObject jObj = null;
+
 
 			try {
 
@@ -169,164 +175,27 @@ public class DialogForm_InputProduk_Review extends FragmentActivity {
 		ed_Imei2 = (EditText) findViewById(R.id.ed_form_imei2);
 		ed_Esn = (EditText) findViewById(R.id.ed_form_esn);
 
-		// load imeinya langsung
-		ed_Imei1.setText(getIntent().getStringExtra("imei"));
-
-		// ed_NamaProduk = (EditText) findViewById(R.id.ed_form_namaproduk);
-		// ed_WarnaProduk = (EditText) findViewById(R.id.ed_form_warnaproduk);
-		// ed_Keterangan = (EditText) findViewById(R.id.ed_form_ket);
 		btn_submit = (Button) findViewById(R.id.btn_submit);
-
-		wrapper_bottom = (View) findViewById(R.id.wrapper_bottom);
-
-		// auto_namaProduk =
-		// (AutoCompleteTextView)findViewById(R.id.autocomplete_nama_produk);
-		spinner_TipeProduk = (Spinner) findViewById(R.id.autocomplete_nama_produk);
-		wrapper_Others= (View)findViewById(R.id.wrapper_others);
 		ed_Others = (AutoCompleteTextView)findViewById(R.id.ed_others);
 
 		auto_warnaProduk = (AutoCompleteTextView) findViewById(R.id.autocomplete_warna_produk);
 		auto_keteranganProduk = (AutoCompleteTextView) findViewById(R.id.autocomplete_ket_produk);
 
-		adapter_warna = new ArrayAdapter<String>(getApplicationContext(),
-				R.layout.spinner_item, getResources().getStringArray(
-						R.array.warna_produk));
-		auto_warnaProduk.setAdapter(adapter_warna);
+		// load imeinya langsung
+		ed_Imei1.setText(getIntent().getStringExtra("cImei1"));
+		ed_Sn.setText(getIntent().getStringExtra("cSn"));
+		ed_Imei2.setText(getIntent().getStringExtra("cImei2"));
+		ed_Esn.setText(getIntent().getStringExtra("cEsn"));
+		ed_Others.setText(getIntent().getStringExtra("nama_produk"));
+		auto_warnaProduk.setText(getIntent().getStringExtra("cWarnaProduk"));
+		auto_keteranganProduk.setText(getIntent().getStringExtra("cKeterangan"));
 
-		adapter_ket = new ArrayAdapter<String>(getApplicationContext(),
-				R.layout.spinner_item, getResources().getStringArray(
-						R.array.ket_produk));
-		auto_keteranganProduk.setAdapter(adapter_ket);
-
-		new Async_Get_TipeProduk().execute();
-
+		btn_submit.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				new Async_SubmitProduk().execute();
+			}
+		});
 	}
 
-	private class Async_Get_TipeProduk extends AsyncTask<Void, Void, Void> {
-
-		DialogFragmentProgress pDialog;
-		String cCode;
-
-		@Override
-		protected void onPreExecute() {
-			// TODO Auto-generated method stub
-			super.onPreExecute();
-			data_tipe = new ArrayList<String>();
-
-			// pDialog = new DialogFragmentProgress();
-			// pDialog.show(getSupportFragmentManager(), "");
-		}
-
-		@Override
-		protected Void doInBackground(Void... params) {
-			// TODO Auto-generated method stub
-			ServiceHandlerJSON sh = new ServiceHandlerJSON();
-			JSONObject jObj = sh.json_load_produktipe();
-
-			try {
-				JSONArray jArray = jObj
-						.getJSONArray(Parameter_Collections.TAG_DATA);
-				cCode = jObj.getString(Parameter_Collections.TAG_JSON_CODE);
-				if (cCode.equals("1")) {
-					for (int i = 0; i < jArray.length(); i++) {
-						JSONObject c = jArray.getJSONObject(i);
-						data_tipe
-								.add(c.getString(Parameter_Collections.TAG_NAMA_PRODUK));
-						Log.e("NAMA PRODUK",
-								c.getString(Parameter_Collections.TAG_NAMA_PRODUK));
-					}
-					data_tipe.add("Lainnya");
-				}
-
-			} catch (JSONException e) {
-
-			}
-			return null;
-		}
-
-		@Override
-		protected void onPostExecute(Void result) {
-			// TODO Auto-generated method stub
-			super.onPostExecute(result);
-			// pDialog.dismiss();
-			if (cCode.equals("1")) {
-				adapter_nama = new ArrayAdapter<String>(
-						getApplicationContext(), R.layout.spinner_item,
-						data_tipe);
-				spinner_TipeProduk.setAdapter(adapter_nama);
-
-			} else {
-				Toast.makeText(getApplicationContext(),
-						"Tidak bisa Load Nama Produk, Cek Internet anda",
-						Toast.LENGTH_LONG).show();
-			}
-
-			tv_label = (TextView) findViewById(R.id.txt_label);
-			tv_keterangan_error = (TextView) findViewById(R.id.keterangan_error);
-
-			if (ada_di_db) {
-				tv_label.setText("Produk tidak ada di database !");
-				tv_keterangan_error.setVisibility(View.VISIBLE);
-			} else {
-				tv_label.setText("Produk tidak ada di dalam stok toko !");
-				tv_keterangan_error.setVisibility(View.GONE);
-			}
-
-			spinner_TipeProduk
-			.setOnItemSelectedListener(new OnItemSelectedListener() {
-
-				@Override
-				public void onItemSelected(AdapterView<?> parent,
-						View view, int position, long id) {
-					// TODO Auto-generated method stub
-					cNamaProduk = data_tipe.get(position);
-					Log.e("Nama Tipe Produk", cNamaProduk);
-
-					if(cNamaProduk.equals("Lainnya")){
-						wrapper_Others.setVisibility(View.VISIBLE);
-					}
-				}
-
-				@Override
-				public void onNothingSelected(AdapterView<?> parent) {
-					// TODO Auto-generated method stub
-
-				}
-			});
-			
-			btn = (Button) findViewById(R.id.btn);
-			table_Form = (TableLayout) findViewById(R.id.form);
-
-			btn.setOnClickListener(new OnClickListener() {
-
-				@Override
-				public void onClick(View v) {
-					// TODO Auto-generated method stub
-					table_Form.setVisibility(View.VISIBLE);
-					tv_label.setVisibility(View.GONE);
-					btn.setVisibility(View.GONE);
-					wrapper_bottom.setVisibility(View.VISIBLE);
-				}
-			});
-
-			btn_submit.setOnClickListener(new OnClickListener() {
-
-				@Override
-				public void onClick(View v) {
-					// TODO Auto-generated method stub
-					if (!ed_Imei1.getText().toString().equals("")
-							&& !auto_warnaProduk.getText().toString()
-							.equals("")
-							&& !auto_keteranganProduk.getText().toString()
-							.equals("")) {
-						new Async_SubmitProduk().execute();
-					} else {
-						Toast.makeText(getApplicationContext(),
-								"Please fill required field",
-								Toast.LENGTH_SHORT).show();
-					}
-				}
-			});
-		}
-	}
 }

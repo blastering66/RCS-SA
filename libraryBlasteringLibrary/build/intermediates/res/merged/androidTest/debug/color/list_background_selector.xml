@@ -7,4 +7,4 @@
            android:color="#ffffff" /> <!-- focused -->
      <item android:color="#ffffff" /> <!-- default -->
 
-</selector><!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/libraryBlasteringLibrary/src/main/res/color/list_background_selector.xml --><!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/Htc-sa/HTCPromotorSMTools/libraryBlasteringLibrary/build/intermediates/bundles/debug/res/color/list_background_selector.xml -->
+</selector><!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/RCS-SA/libraryBlasteringLibrary/src/main/res/color/list_background_selector.xml --><!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/RCS-SA/libraryBlasteringLibrary/build/intermediates/bundles/debug/res/color/list_background_selector.xml -->

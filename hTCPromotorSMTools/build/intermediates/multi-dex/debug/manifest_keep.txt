@@ -1,0 +1,45 @@
+-keep class android.support.multidex.MultiDexApplication {
+    <init>();
+    void attachBaseContext(android.content.Context);
+}
+-keep class id.tech.htctools.Splashscreen_Activity { <init>(); }
+-keep class id.tech.htctools.Test_Swipe { <init>(); }
+-keep class id.tech.htctools.MenuUtama_Activity { <init>(); }
+-keep class id.tech.htctools.MenuUtama_WP { <init>(); }
+-keep class id.tech.htctools.Login_Activity { <init>(); }
+-keep class id.tech.htctools.Issue_Activity { <init>(); }
+-keep class id.tech.htctools.UpdateBranding_Activity { <init>(); }
+-keep class id.tech.htctools.CekProduk_Activity { <init>(); }
+-keep class id.tech.htctools.HistoryNotification_Activity { <init>(); }
+-keep class id.tech.htctools.History_Activity { <init>(); }
+-keep class id.tech.htctools.InfoToko_Activity { <init>(); }
+-keep class id.tech.htctools.InputPenjualanManual_Activity { <init>(); }
+-keep class id.tech.htctools.InputPenjualanScan_Activity { <init>(); }
+-keep class id.tech.htctools.UploadImageDialog { <init>(); }
+-keep class id.tech.htctools.DialogHargaProduk { <init>(); }
+-keep class id.tech.htctools.DialogAbsen { <init>(); }
+-keep class id.tech.htctools.DialogPindahToko { <init>(); }
+-keep class id.tech.htctools.DialogFormInputProduk { <init>(); }
+-keep class id.tech.htctools.DialogForm_InputProduk_Review { <init>(); }
+-keep class id.tech.htctools.DialogFormInputProdukImei { <init>(); }
+-keep class id.tech.htctools.DialogFormPenjualanProduk { <init>(); }
+-keep class id.tech.htctools.DialogTambahFoto { <init>(); }
+-keep class id.tech.htctools.DialogTransfer { <init>(); }
+-keep class id.tech.htctools.DialogChooserInputStok { <init>(); }
+-keep class id.tech.htctools.DialogChooserInputPennjualan { <init>(); }
+-keep class id.tech.htctools.DialogLocationConfirmation { <init>(); }
+-keep class id.tech.htctools.Notif_Detail_Activity { <init>(); }
+-keep class id.tech.htctools.ScanAbsen_Activity { <init>(); }
+-keep class id.tech.htctools.ScanIstirahat_Activity { <init>(); }
+-keep class id.tech.htctools.ScanPindahToko_Activity { <init>(); }
+-keep class id.tech.htctools.ScanInputProduk_Activity { <init>(); }
+-keep class id.tech.htctools.ScanPenjualan_Activity { <init>(); }
+-keep class id.tech.htctools.Notif_Service { <init>(); }
+-keep class id.tech.htctools.BootCompletedReceiver { <init>(); }
+-keep class id.tech.htctools.NotifBroadcastReceiver { <init>(); }
+-keep public class * extends android.app.backup.BackupAgent {
+    <init>();
+}
+-keep public class * extends java.lang.annotation.Annotation {
+    *;
+}

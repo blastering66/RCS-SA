@@ -4,4 +4,4 @@
     <item android:drawable="@drawable/composer_button_pressed" android:state_pressed="true"/>
     <item android:drawable="@drawable/composer_button_normal"/>
 
-</selector><!-- From: file:/D:/Workspace_Android_Github/RCS-SA/libraryBlasteringLibrary/src/main/res/drawable/composer_button.xml -->
+</selector><!-- From: file:/Users/macbook/Desktop/Android%20Studio%20Repo%20Workspace/RCS-SA/libraryBlasteringLibrary/src/main/res/drawable/composer_button.xml -->
