@@ -53,6 +53,7 @@ id/tech/htctools/DialogHargaProduk$1.class
 android/support/v7/widget/LinearLayoutCompat$OrientationMode.class
 id/tech/htctools/NotifBroadcastReceiver$Async_GetNotif.class
 android/support/v7/widget/RecyclerView$LayoutParams.class
+id/tech/htctools/DialogForm_InputProduk_Review$Async_SubmitProduk_Retrofit.class
 android/support/v4/app/FragmentActivity.class
 android/support/multidex/MultiDex.class
 -keep class id.tech.htctools.DialogFormInputProdukImei { <init>(); }
@@ -392,6 +393,7 @@ id/tech/htctools/MenuUtama_WP.class
 android/support/v7/widget/RecyclerView$2.class
 android/support/v4/util/SimpleArrayMap.class
 id/tech/htctools/UpdateBranding_Activity.class
+id/tech/htctools/ScanInputProduk_Activity$Async_InputProduk_Retrofit.class
 retrofit/http/FieldMap.class
 android/support/v7/widget/LinearLayoutCompat$LayoutParams.class
 com/bumptech/glide/DrawableOptions.class
@@ -494,6 +496,7 @@ id/tech/models/PojoResponseRowCount.class
 android/support/v4/view/ViewCompatICSMr1.class
 -keep class id.tech.htctools.Splashscreen_Activity { <init>(); }
 id/tech/htctools/MenuUtama_Activity$2.class
+id/tech/htctools/ScanIstirahat_Activity$Async_SubmitAbsen_Retrofit.class
 android/support/v4/app/FragmentManager.class
 id/tech/htctools/ScanIstirahat_Activity$Async_SubmitAbsenIstirahat.class
 android/support/annotation/AttrRes.class

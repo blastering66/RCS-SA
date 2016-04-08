@@ -96,7 +96,8 @@ public class DialogFormInputProdukImei extends FragmentActivity {
 				if(mUrl_Img_00 == null || mUrl_Img_00.equals("")){
 					Toast.makeText(getApplicationContext(),"Input Foto Terlebih Dahulu", Toast.LENGTH_LONG).show();
 				}else{
-					new Async_InputProduk_Retrofit().execute();
+//					new Async_InputProduk_Retrofit().execute();
+					new Async_InputProduk().execute();
 				}
 
 			}
@@ -209,10 +210,11 @@ public class DialogFormInputProdukImei extends FragmentActivity {
 						getApplicationContext(), "Produk sudah ada di Stok", 9);
 				dialog.setCancelable(false);
 				dialog.show(getSupportFragmentManager(), "");
-
-				// Toast.makeText(getApplicationContext(), "",
-				// Toast.LENGTH_LONG).show();
-				// finish();
+			}else{
+				DialogLocationConfirmation dialog = new DialogLocationConfirmation(
+						getApplicationContext(), "Terjadi Kesalahan pada server", 9);
+				dialog.setCancelable(false);
+				dialog.show(getSupportFragmentManager(), "");
 			}
 		}
 	}

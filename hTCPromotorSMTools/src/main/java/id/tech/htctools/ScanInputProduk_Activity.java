@@ -48,10 +48,19 @@ import com.jwetherell.quick_response_code.ViewfinderView;
 import com.jwetherell.quick_response_code.camera.CameraManager;
 import com.jwetherell.quick_response_code.result.ResultHandler;
 import com.jwetherell.quick_response_code.result.ResultHandlerFactory;
+import com.squareup.okhttp.MediaType;
+import com.squareup.okhttp.RequestBody;
+
+import id.tech.adapters.Rest_Adapter;
 import id.tech.htctools.R;
+import id.tech.models.PojoResponseRowCount;
 import id.tech.util.GPSTracker;
 import id.tech.util.Parameter_Collections;
 import id.tech.util.Public_Functions;
+import retrofit.Call;
+import retrofit.GsonConverterFactory;
+import retrofit.Response;
+import retrofit.Retrofit;
 
 public class ScanInputProduk_Activity extends FragmentActivity implements
 		IDecoderActivity, SurfaceHolder.Callback {
@@ -220,7 +229,9 @@ public class ScanInputProduk_Activity extends FragmentActivity implements
 
 		if (Public_Functions.isNetworkAvailable(getApplicationContext())) {
 			new Async_SubmitInputProduk().execute();
+//			new Async_InputProduk_Retrofit().execute();
 		} else {
+
 			Toast.makeText(getApplicationContext(),
 					"No Internet Connection, Cek Your Network",
 					Toast.LENGTH_LONG).show();
@@ -602,6 +613,109 @@ public class ScanInputProduk_Activity extends FragmentActivity implements
 			setResult(RESULT_OK, data);
 		}
 		super.finish();
+	}
+
+
+	private class Async_InputProduk_Retrofit extends AsyncTask<Void, Void, String> {
+		ProgressDialog pdialog;
+		DialogFragmentProgress dialogProgress;
+		String respondMessage;
+		JSONObject jsonResult;
+		String cImei,row_count, error_message="";
+
+		@Override
+		protected void onPreExecute() {
+			super.onPreExecute();
+			dialogProgress = new DialogFragmentProgress();
+			dialogProgress.show(getSupportFragmentManager(), "");
+
+		}
+
+		@Override
+		protected String doInBackground(Void... voids) {
+			Retrofit retrofit = new Retrofit.Builder().addConverterFactory(GsonConverterFactory.create())
+					.baseUrl(Parameter_Collections.URL_BASE).build();
+
+			RequestBody imgBody = RequestBody.create(MediaType.parse("image/*"), new File(cUrlImage));
+			RequestBody cKind = RequestBody.create(MediaType.parse("text/plain"), Parameter_Collections.KIND_INSERT_PRODUKTOKO);
+			RequestBody cId_pegawai = RequestBody.create(MediaType.parse("text/plain"), id_pegawai);
+			RequestBody cKodeToko = RequestBody.create(MediaType.parse("text/plain"), kode_toko);
+			RequestBody cLat = RequestBody.create(MediaType.parse("text/plain"), spf.getString(
+					Parameter_Collections.TAG_LATITUDE_NOW, ""));
+			RequestBody cLong = RequestBody.create(MediaType.parse("text/plain"), spf.getString(
+					Parameter_Collections.TAG_LONGITUDE_NOW, ""));
+			RequestBody cImeiBody = RequestBody.create(MediaType.parse("text/plain"), code);
+
+			Rest_Adapter adapter = retrofit.create(Rest_Adapter.class);
+			Call<PojoResponseRowCount> call = adapter.input_produk(cKind,
+					cId_pegawai, cKodeToko, cLat, cLong, cImeiBody, imgBody);
+			try{
+				Response<PojoResponseRowCount> response = call.execute();
+
+				if(response.isSuccess()){
+					if(response.body().getJsonCode() == 1){
+						row_count = response.body().getRowCount().toString();
+					}else{
+						row_count = "0";
+					}
+				}else{
+					row_count = "0";
+				}
+			}catch (IOException e){
+				row_count = "0";
+			}
+			return null;
+		}
+
+		@Override
+		protected void onPostExecute(String s) {
+			super.onPostExecute(s);
+
+			if (row_count.equals("1")) {
+				dialogProgress.dismiss();
+
+				DialogLocationConfirmation dialog = new DialogLocationConfirmation(
+						getApplicationContext(), "Input Stok Sukses", 9);
+				dialog.setCancelable(false);
+				dialog.show(getSupportFragmentManager(), "");
+
+				// Toast.makeText(getApplicationContext(), result,
+				// Toast.LENGTH_LONG).show();
+				// Toast.makeText(getApplicationContext(), "Input Stok Sukses",
+				// Toast.LENGTH_LONG).show();
+				// finish();
+			} else if (error_message.equals("produk tidak ada di database")) {
+
+				Intent load = new Intent(getApplicationContext(),
+						DialogFormInputProduk.class);
+				load.putExtra("ada_di_db", true);
+				load.putExtra("imei", code);
+				// load.putExtra("ada_di_db", false);
+				startActivity(load);
+				finish();
+
+			} else if (error_message
+					.equals("produk tidak ada di dalam stok toko")) {
+				Intent load = new Intent(getApplicationContext(),
+						DialogFormInputProduk.class);
+				load.putExtra("ada_di_db", false);
+				load.putExtra("imei", code);
+				startActivity(load);
+				finish();
+			} else if (error_message.equals("produk sudah ada di data stok")) {
+				dialogProgress.dismiss();
+
+				DialogLocationConfirmation dialog = new DialogLocationConfirmation(
+						getApplicationContext(), "Produk sudah ada di Stok", 9);
+				dialog.setCancelable(false);
+				dialog.show(getSupportFragmentManager(), "");
+
+				// Toast.makeText(getApplicationContext(), "",
+				// Toast.LENGTH_LONG).show();
+				// finish();
+			}
+
+		}
 	}
 
 }

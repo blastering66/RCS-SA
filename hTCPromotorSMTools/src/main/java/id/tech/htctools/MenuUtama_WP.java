@@ -185,67 +185,74 @@ public class MenuUtama_WP extends ActionBarActivity {
 					}
 				}
 
-				Call<PojoStockStore> call_stock = adapter.cek_stock(sp.getString(
-						Parameter_Collections.SH_KODE_TOKO, ""),"false");
-				Response<PojoStockStore> stockResponse = call_stock.execute();
-				if(stockResponse.isSuccess()){
-					if(stockResponse.body().getJsonCode().equals("1")){
-						if(stockResponse.body().getData().size()>0){
-							for(int i= 0;i < stockResponse.body().getData().size();i++ ){
-								String nama_produk = stockResponse.body().getData().get(i).getNamaProduk();
-								String status_produk = stockResponse.body().getData().get(i).getStatusProduk();
-								if (status_produk.equals("1")) {
-									if (nama_produk.contains(Parameter_Collections.TIPE_D_300)) {
-										available_D_300 = true;
-										total_D_300 += 1;
-									} else if (nama_produk.contains(Parameter_Collections.TIPE_D_616)) {
-										available_D_616 = true;
-										total_D_616 += 1;
-									} else if (nama_produk.contains(Parameter_Collections.TIPE_D_816)) {
-										available_D_816 = true;
-										total_D_816 += 1;
-									}else if (nama_produk.contains(Parameter_Collections.TIPE_D_C)) {
-										available_D_C = true;
-										total_D_C += 1;
-									}else if (nama_produk.contains(Parameter_Collections.TIPE_FLYER)) {
-										available_flyer = true;
-										total_flyer += 1;
-									}else if (nama_produk.contains(Parameter_Collections.TIPE_O_820D)) {
-										available_O_820D = true;
-										total_O_820D += 1;
-									}else if (nama_produk.contains(Parameter_Collections.TIPE_O_E8)) {
-										available_O_E8 = true;
-										total_O_E8 += 1;
-									}else if (nama_produk.contains(Parameter_Collections.TIPE_O_M7C)) {
-										available_O_M7C = true;
-										total_O_M7C += 1;
-									}else if (nama_produk.contains(Parameter_Collections.TIPE_O_M8)) {
-										available_O_M8 = true;
-										total_O_M8 += 1;
-									}else if (nama_produk.contains(Parameter_Collections.TIPE_O_M9)) {
-										available_O_M9 = true;
-										total_O_M9 += 1;
-									}else if (nama_produk.contains(Parameter_Collections.TIPE_O_Max)) {
-										available_O_Max = true;
-										total_O_Max += 1;
-									}else if (nama_produk.contains(Parameter_Collections.TIPE_O_Mini)) {
-										available_O_Mini = true;
-										total_O_Mini += 1;
-									}else if (nama_produk.contains(Parameter_Collections.TIPE_WP)) {
-										available_WP = true;
-										total_WP += 1;
-									}else if (nama_produk.contains(Parameter_Collections.TIPE_WP_8X)) {
-										available_WP_8X = true;
-										total_WP_8X += 1;
+
+				String kodeToko =sp.getString(Parameter_Collections.SH_KODE_TOKO, "");
+				if(kodeToko.equals("")){
+
+				}else{
+					Call<PojoStockStore> call_stock = adapter.cek_stock(kodeToko,"false");
+					Response<PojoStockStore> stockResponse = call_stock.execute();
+					if(stockResponse.isSuccess()){
+						if(stockResponse.body().getJsonCode().equals("1")){
+							if(stockResponse.body().getData().size()>0){
+								for(int i= 0;i < stockResponse.body().getData().size();i++ ){
+									String nama_produk = stockResponse.body().getData().get(i).getNamaProduk();
+									String status_produk = stockResponse.body().getData().get(i).getStatusProduk();
+									if (status_produk.equals("1")) {
+										if (nama_produk.contains(Parameter_Collections.TIPE_D_300)) {
+											available_D_300 = true;
+											total_D_300 += 1;
+										} else if (nama_produk.contains(Parameter_Collections.TIPE_D_616)) {
+											available_D_616 = true;
+											total_D_616 += 1;
+										} else if (nama_produk.contains(Parameter_Collections.TIPE_D_816)) {
+											available_D_816 = true;
+											total_D_816 += 1;
+										}else if (nama_produk.contains(Parameter_Collections.TIPE_D_C)) {
+											available_D_C = true;
+											total_D_C += 1;
+										}else if (nama_produk.contains(Parameter_Collections.TIPE_FLYER)) {
+											available_flyer = true;
+											total_flyer += 1;
+										}else if (nama_produk.contains(Parameter_Collections.TIPE_O_820D)) {
+											available_O_820D = true;
+											total_O_820D += 1;
+										}else if (nama_produk.contains(Parameter_Collections.TIPE_O_E8)) {
+											available_O_E8 = true;
+											total_O_E8 += 1;
+										}else if (nama_produk.contains(Parameter_Collections.TIPE_O_M7C)) {
+											available_O_M7C = true;
+											total_O_M7C += 1;
+										}else if (nama_produk.contains(Parameter_Collections.TIPE_O_M8)) {
+											available_O_M8 = true;
+											total_O_M8 += 1;
+										}else if (nama_produk.contains(Parameter_Collections.TIPE_O_M9)) {
+											available_O_M9 = true;
+											total_O_M9 += 1;
+										}else if (nama_produk.contains(Parameter_Collections.TIPE_O_Max)) {
+											available_O_Max = true;
+											total_O_Max += 1;
+										}else if (nama_produk.contains(Parameter_Collections.TIPE_O_Mini)) {
+											available_O_Mini = true;
+											total_O_Mini += 1;
+										}else if (nama_produk.contains(Parameter_Collections.TIPE_WP)) {
+											available_WP = true;
+											total_WP += 1;
+										}else if (nama_produk.contains(Parameter_Collections.TIPE_WP_8X)) {
+											available_WP_8X = true;
+											total_WP_8X += 1;
+										}
+
+
 									}
-
-
 								}
-							}
 
+							}
 						}
 					}
 				}
+
+
 
 				adapter_slider = new RecyclerAdapter_Slider(cNama_Pegawai,
 						cTarget, cAchievement, cUrl_ImgProfilePic,

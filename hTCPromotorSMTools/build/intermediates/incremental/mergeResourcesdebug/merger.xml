@@ -2302,7 +2302,7 @@
         <item>Singapore</item>
         <item>New Zealand</item>
         <item>India</item>
-    </string-array><string name="txt_harga_produk">Product Price</string><string name="txt_input_stock">Input Stock</string><string name="txt_pindah_toko">Switch Shop ?</string><string name="hint_password">Password</string><string name="txt_input_manual">Manually Input</string><string-array name="nama_produk">
+    </string-array><string name="txt_harga_produk">Product Price</string><string name="txt_input_stock">Input Stock</string><string name="txt_name_else_produk_">Product Name Else</string><string name="txt_pindah_toko">Switch Shop ?</string><string name="hint_password">Password</string><string name="txt_input_manual">Manually Input</string><string-array name="nama_produk">
         <item>HTC Desire 616</item>
         <item>HTC One M8 Ace_E8</item>
         <item>HTC Desire 816</item>

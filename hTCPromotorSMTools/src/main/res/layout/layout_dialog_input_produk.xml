@@ -172,7 +172,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/txt_warna_produk" />
+                    android:text="@string/txt_name_else_produk_" />
 
                 <AutoCompleteTextView
                     android:id="@+id/ed_others"

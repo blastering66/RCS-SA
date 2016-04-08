@@ -65,6 +65,8 @@ public interface Rest_Adapter {
             @Part("img\"; filename=\"img.png\" ")RequestBody img0
             );
 
+
+
     @GET("get.php?kind=absensi")
     Call<PojoAbsensi> absensi_pegawai(@Query("id_pegawai") String id_pegawai
     );
@@ -144,5 +146,23 @@ public interface Rest_Adapter {
             @Part("img1\"; filename=\"img1.png\" ")RequestBody img1,
             @Part("img2\"; filename=\"img2.png\" ")RequestBody img2,
             @Part("img3\"; filename=\"img3.png\" ")RequestBody img3
+    );
+
+
+    @FormUrlEncoded
+    @POST("insert.php?")
+    Call<PojoResponseRowCount> input_produk_baru(
+            @Field("kind") String kind,
+            @Field("serial_number_produk") String serial_number_produk,
+            @Field("imei") String imei,
+            @Field("imei2") String imei2,
+            @Field("ESN") String esn,
+            @Field("nama_produk") String nama_produk,
+            @Field("warna_produk") String warna_produk,
+            @Field("keterangan_produk") String keterangan_produk,
+            @Field("kode_toko") String kode_toko,
+            @Field("id_pegawai") String id_pegawai,
+            @Field("latitude_produk_toko") String latitude_produk_toko,
+            @Field("longitude_produk_toko") String longitude_produk_toko
     );
 }

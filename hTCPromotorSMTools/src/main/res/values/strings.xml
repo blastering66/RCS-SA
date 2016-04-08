@@ -74,6 +74,7 @@
     <string name="txt_esn_meid">ESN / MEID</string>
     <string name="txt_dot">...</string>
     <string name="txt_warna_produk">Product Color</string>
+    <string name="txt_name_else_produk_">Product Name Else</string>
     <string name="txt_tipe_produk_others">Other Name</string>
     
     <string name="txt_nama_produk">Product Name</string>
